@@ -16,9 +16,13 @@
 	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicons/32x32.png">
 
 </head>
-<body>
+<body class="waypoint" data-animate-down="fx-down" data-animate-up="fx-up">
 
 	{{ content }}
+
+	<script src="{{site.baseurl}}/assets/js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/waypoints.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/main.js"></script>
 
 	<!-- Google Analytics -->
 	<script>
