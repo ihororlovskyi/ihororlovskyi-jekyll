@@ -1,0 +1,208 @@
+//	Typography
+.gigantic, .huge, .large, .bigger, .big, 
+h1, h2, h3, h4, h5, h6 {
+	color: $accent-color;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Julius Sans One', sans-serif;
+	// margin: 0 0 20px;
+}
+
+// .gigantic {
+	// font-size: 110px;
+	// line-height: 1.09;
+	// letter-spacing: -2px;
+// }
+
+.huge, h1 {
+	font-size: 42px;
+	line-height: 1.4;
+	margin: 80px 0 10px;
+	letter-spacing: 10px;
+}
+
+.large, h2 {
+	font-size: 45px;
+	line-height: 1.4;
+}
+
+.bigger, h3 {
+	font-size: 32px;
+	line-height: 1.4;
+}
+
+.big, h4 {
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0;
+	letter-spacing: 16px;
+}
+
+.small, small {
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+hr {
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 10px 0 30px;
+	height: 0;
+}
+
+// Links
+a {
+	color: $link-color;
+	text-decoration: none;
+	outline: 0;
+	@include transition(all 0.2s);
+
+	&:hover, &:focus {
+		color: $link-color-hover;
+	}
+}
+
+
+
+// Selection colors (easy to forget)
+::selection {
+	background: $selection-color;
+}
+
+::-moz-selection {
+	background: $selection-color;
+}
+
+img::selection {
+	background: transparent;
+}
+
+img::-moz-selection {
+	background: transparent;
+}
+
+body {
+	-webkit-tap-highlight-color: $selection-color;
+}
+
+
+
+// Basic Styles
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background: $bg-color;
+	font-size: 16px;
+	line-height: 1.5;
+	// font-family: 'Open Sans' sans-serif;
+	// font-family: 'Arial' sans-serif;
+	// font-family: 'Open Sans' sans-serif;
+	// font-family: 'Fauna One', Georgia, serif;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 500;
+	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	position: relative;
+	height: 100%;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+body{
+	background: #000;
+	overflow: hidden;
+}
+
+// main {
+// 	margin:auto;
+// 	@include clearfix;
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	width: 50%;
+// 	height: 50%;
+// 	@include transform(translate(-50%, -50%));
+// }
+
+main, h1, h4 {
+	display: inline-block;
+}
+
+h1, h4 {
+	position: relative;
+	z-index: 1;
+}
+
+.wip, h1, h4 {
+		@include transition(all 3.25s $ease-out-quart);
+}
+
+.wip {
+	@include transform(translate(-50%, -50%));
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: 0;
+	margin-left: 0;
+}
+
+main:hover {
+	.wip {
+		top: 20%;
+		transform-origin: 80px;
+		margin-left: -80px;
+	}
+	h1,
+	h4 {letter-spacing: 0;}
+	h1 {margin-top: 260px}
+}
+
+.wip:after{
+	background: radial-gradient(ellipse at 50% 0,
+		rgba(155,89,182,0.5) 0%,
+		rgba(164,232,58,0.0) 50%,
+		rgba(26,188,156,0.5) 100%);
+}
+
+@for $i from 1 through 12{
+		.wip:nth-child(#{$i}){
+			@include transform(rotate($i*30deg));
+		
+		&:after{
+			content:'';
+			width: 100px;
+			height: 100px;
+			// background: radial-gradient(ellipse at 50% 0, rgba(177,247,0,.5) 0%,rgba(164,232,58,0) 50%,rgba(177,247,0,.5) 100%);
+			border-radius: 50%;
+			position: absolute;
+			animation: wip 3s linear infinite;
+		}
+	}
+	@keyframes wip{
+		100%{transform: rotate(1turn)}
+	}
+}

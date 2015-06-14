@@ -1,0 +1,14 @@
+$primary-color: #54bebe;
+
+$text-color: #ccc;
+$accent-color: lighten($text-color, 10%);
+
+$bg-color: #111;
+$bg-color-secondary: #000;
+
+$link-color: darken($text-color, 15%);
+$link-color-hover: lighten($link-color, 30%);
+
+$selection-color: #ff0;
+
+$divider-color: #333;
