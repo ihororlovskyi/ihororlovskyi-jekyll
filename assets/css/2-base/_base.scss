@@ -240,7 +240,7 @@ section {
 		article {
 			font-family: 'Fauna One', Georgia, serif;
 			position: absolute;
-			bottom: 10%;
+			bottom: 5%;
 			@include transform(translateX(-50%));
 		}
 	}
@@ -253,7 +253,7 @@ section {
 .fx-down {
 	article {
 		.wip {
-			top: 20%;
+			top: 25%;
 			transform-origin: 80px;
 			margin-left: -80px;
 			&:after {
@@ -263,7 +263,7 @@ section {
 		}
 		h1,
 		h4 {letter-spacing: 0;}
-		h1 {margin-top: 270px}
+		h1 {margin-top: 100%}
 	}
 }
 
