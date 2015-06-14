@@ -157,7 +157,7 @@ h1, h4 {
 	z-index: 1;
 }
 
-.wip, h1, h4 {
+.wip, h1, h4, .wip:after {
 		@include transition(all 3.25s $ease-out-quart);
 }
 
@@ -170,18 +170,8 @@ h1, h4 {
 	margin-left: 0;
 }
 
-main:hover {
-	.wip {
-		top: 20%;
-		transform-origin: 80px;
-		margin-left: -80px;
-	}
-	h1,
-	h4 {letter-spacing: 0;}
-	h1 {margin-top: 260px}
-}
 
-.wip:after{
+.wip:after {
 	background: radial-gradient(ellipse at 50% 0,
 		rgba(155,89,182,0.5) 0%,
 		rgba(164,232,58,0.0) 50%,
@@ -194,15 +184,30 @@ main:hover {
 		
 		&:after{
 			content:'';
-			width: 100px;
-			height: 100px;
+			width: 125px;
+			height: 250px;
 			// background: radial-gradient(ellipse at 50% 0, rgba(177,247,0,.5) 0%,rgba(164,232,58,0) 50%,rgba(177,247,0,.5) 100%);
 			border-radius: 50%;
 			position: absolute;
-			animation: wip 3s linear infinite;
+			animation: wip 5s linear infinite;
 		}
 	}
 	@keyframes wip{
 		100%{transform: rotate(1turn)}
 	}
+}
+
+main:hover {
+	.wip {
+		top: 20%;
+		transform-origin: 80px;
+		margin-left: -80px;
+		&:after {
+			width: 25px;
+			height: 75px;
+		}
+	}
+	h1,
+	h4 {letter-spacing: 0;}
+	h1 {margin-top: 260px}
 }
