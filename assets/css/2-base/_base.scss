@@ -141,7 +141,7 @@ body {
 // }
 
 
-article, h1, h4 {
+article {
 	display: inline-block;
 }
 
@@ -242,11 +242,14 @@ section {
 		// }
 		article {
 			position: absolute;
-			top: 5%;
-			right: 10%;
+			top: 0;
+			right: 0;
+			padding: 5% 10%;
+			width: 100%;
 			font-family: 'Fauna One', Georgia, serif;
-			text-align: right;
+			text-align: left;
 			// @include transform(translateX(-50%));
+			@include box-sizing(border-box);
 		}
 	}
 	&.sect-three {
@@ -280,8 +283,45 @@ section {
 		}
 		h1,
 		h4 {letter-spacing: 0;}
-		h1 {margin-top: 100%}
+		h1 {margin-top: 100%;}
 	}
 }
+
+div.player {
+	position: fixed;
+	top: 32px;
+	right: 35px;
+	@include transition(all 0.75s $ease-out-quart);
+	iframe {
+		float: right;
+		display: block;
+		opacity: 0.5;
+		width: 175px;
+		height: 175px;
+		@include transition(all 0.75s $ease-out-quart);
+	}
+	&:after {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		color: #fff;
+		content: '';
+		@include transform(translateY(100%));
+	}
+	&:hover {
+		iframe {
+			width: 350px;
+			height: 200px;
+			opacity: 1.0;
+		}
+	}
+	span {
+				float: right;
+				width: 100%;
+				text-align: right;
+				display: block;
+	}
+}
+
 
 
