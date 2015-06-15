@@ -209,7 +209,7 @@ section {
 		position: fixed;
 		// z-index: 2;
 		h1 {
-			margin: 80px 0 10px;
+			margin: 10% 0 10px;
 			letter-spacing: 11px;
 		}
 		h4 {
@@ -256,7 +256,7 @@ section {
 		article {
 			font-family: 'Fauna One', Georgia, serif;
 			position: absolute;
-			bottom: 5%;
+			bottom: 3%;
 			@include transform(translateX(-50%));
 		}
 	}
@@ -284,10 +284,14 @@ section {
 		h1, h4 {
 			letter-spacing: 0;
 			color: transparent;
-			text-shadow: 0 0 4px rgba(255,255,255,0.25), 0 12px 15px rgba(255,255,255,0.25);
+			text-shadow: 0 0 4px rgba(255,255,255,0.25), 0 12px 12px rgba(255,255,255,0.25);
 		}
 		h1 {
 			margin: 100% 0 0;
+			@include transform(translateY(100%));
+		}
+		h4 {
+			@include transform(translateY(-100%));
 		}
 	}
 }
@@ -320,12 +324,12 @@ div.player {
 			opacity: 1.0;
 		}
 	}
-	span {
-				float: right;
-				width: 100%;
-				text-align: right;
-				display: block;
-	}
+	// span {
+	// 	float: right;
+	// 	width: 100%;
+	// 	text-align: right;
+	// 	display: block;
+	// }
 }
 
 
