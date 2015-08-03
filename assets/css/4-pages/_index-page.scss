@@ -164,41 +164,4 @@ section {
 	}
 }
 
-div.player {
-	position: fixed;
-	top: 32px;
-	right: 35px;
-	@include transition(all 0.75s $ease-out-quart);
-	iframe {
-		float: right;
-		display: block;
-		opacity: 0.25;
-		width: 175px;
-		height: 175px;
-		@include transition(all 0.75s $ease-out-quart);
-	}
-	&:after {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		color: #fff;
-		content: '';
-		@include transform(translateY(100%));
-	}
-	&:hover {
-		iframe {
-			width: 350px;
-			height: 200px;
-			opacity: 1.0;
-		}
-	}
-	// span {
-	// 	float: right;
-	// 	width: 100%;
-	// 	text-align: right;
-	// 	display: block;
-	// }
-}
-
-
 
