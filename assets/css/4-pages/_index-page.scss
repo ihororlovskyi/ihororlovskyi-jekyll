@@ -14,8 +14,9 @@ section.top-back {
 	@include transition(all 5.25s $ease-in-out-back);
 
 	h1 {
+		font-size: 50px;
 		margin: 10% 0 10px;
-		letter-spacing: 16px;
+		letter-spacing: 10px;
 		@include transition(all 5.25s $ease-in-out-back);
 		position: relative;
 		z-index: 1;
@@ -26,7 +27,7 @@ section.top-back {
 	h2 {
 		font-size: 18px;
 		margin: 0;
-		letter-spacing: 0;
+		letter-spacing: 2px;
 		@include transition(all 5.25s $ease-in-out-back);
 		position: relative;
 		z-index: 1;
