@@ -1,30 +1,27 @@
 /*-------------------------------------------------------------------------*/
 /* # FOOTER
 /*-------------------------------------------------------------------------*/
-footer.footer {
+section.works {
+	margin-top: 100%;
+	text-align: left;
 	padding: 60px 10%;
 	width: 100%;
-	background-image:repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255,255,255,.1) 3px, rgba(255,255,255,.1) 6px);
+	background-image:repeating-linear-gradient(135deg, transparent, transparent 4px, rgba(255,255,255,.1) 4px, rgba(255,255,255,.1) 8px);
 	@include box-sizing(border-box);
 
 	h4 {
 		// margin: 0;
 	}
 
-	nav.contact {
-		margin-bottom: 30px;
+	article {
+	display: block;
+	margin-bottom: 30px;
 
-		p {
+		h3 {
 			margin: 0;
 		}
-	}
-
-	nav.social {
-		margin-bottom: 30px;
-
-		a {
-			display: inline-block;
-			margin: 0 5px; 
+		p {
+			margin: 0;
 		}
 	}
 }

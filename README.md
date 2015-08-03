@@ -1,5 +1,7 @@
 # Ihor Orlovskyi
 
-Web development of Ihor Orlovskyi portfolio is coming soon
+Web development of Ihor Orlovskyi portfolio site
 
-Actual version soon will be available here [ihororlovskyi.github.io](http://ihororlovskyi.github.io)
+Actual version here [ihororlovskyi.com](http://ihororlovskyi.com){:target="_blank"}
+
+Proudly hosted by [GitHub Pages](https://pages.github.com){:target="_blank"}
