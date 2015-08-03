@@ -7,7 +7,6 @@ section.works {
 	padding: 60px 10%;
 	width: 100%;
 	background-image:repeating-linear-gradient(135deg, transparent, transparent 4px, rgba(255,255,255,.1) 4px, rgba(255,255,255,.1) 8px);
-	@include box-sizing(border-box);
 
 	h4 {
 		// margin: 0;
