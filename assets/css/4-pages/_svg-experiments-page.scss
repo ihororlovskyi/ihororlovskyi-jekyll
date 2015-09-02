@@ -85,16 +85,11 @@
 		clip-path: url(#clipping);
 	}
 
-
-	// .svg-defs {
-	// 	display: block;
-	// }
-
 }
 
-	.svg-defs {
-		// display: none;
+.hidden {
+	svg.svg-defs {
+		position: absolute;
+		bottom: 200%;
 	}
-
-
-
+}
