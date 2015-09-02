@@ -1,0 +1,74 @@
+/*-------------------------------------------------------------------------*/
+/* # SVG EXPERIMENTS PAGE
+/*-------------------------------------------------------------------------*/
+.svg-experiments {
+	.race-wrapper {
+		.race-wrapper_inner {
+			margin: auto;
+			max-width: 1266px;
+
+			.race {
+				width: 195px;
+				height: 234px;
+				display: inline-block;
+				margin: 0 5px;
+				vertical-align: top;
+
+				a.race_icon {
+					display: block;
+					background-size: 100% 100%;
+					width: 195px;
+					height: 196px;
+					margin-bottom: 4px;
+					background-image: url(../img/svg-experiments/alkari-oneface-noborders.png);
+					opacity: 0.7;
+					@include transition(all 0.3s linear);
+				}
+
+				img.race_icon {
+					display: block;
+					background-size: 100% 100%;
+					width: 195px;
+					height: 196px;
+					margin-bottom: 4px;
+					background-image: url(../img/svg-experiments/alkari-oneface-noborders.png);
+					opacity: 0.7;
+					@include transition(all 0.3s linear);
+
+					&.svg-normal-mask {
+						-webkit-mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/stampTiles.svg);
+						mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/stampTiles.svg);
+					}
+				}
+
+				.race_text {
+					font-weight: 300;
+					letter-spacing: .8px;
+					line-height: 15px;
+					text-transform: uppercase;
+					font-family: "Roboto Condensed",sans-serif;
+					font-weight: 300;
+					font-size: 11px;
+
+					a {
+						display: block;
+						color: #ffd951;
+						@include transition(all 0.3s linear);
+					}
+				}
+
+				&:hover {
+
+					.race_icon {
+						opacity: 1;
+					}
+
+					.race_text a {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
