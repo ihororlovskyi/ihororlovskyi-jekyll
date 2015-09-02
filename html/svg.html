@@ -3,37 +3,49 @@ layout: default
 permalink: /svg/
 ---
 
-<div class="svg-experiments">
+<svg class="svg-defs">
+	<defs>
+		<clipPath id="clipping">
+			<polygon id="Star-1" points="98.4999978 153.75 38.2520165 185.424245 49.7583542 118.337123 1.01670635 70.8257603 68.3760155 61.037872 98.5000012 1.1379786e-14 128.624005 61.0378871 195.98331 70.8258091 147.241642 118.337136 158.747982 185.424247"/>
+		</clipPath>
+	</defs>
+</svg>
 
-	<!-- <h1>SVG Experiments</h1>
-	<img src="{{ site.baseurl }}/assets/img/svg-experiments/alkari-oneface-noborders.png" alt="...">
-	<hr> -->
+
+<div class="svg-experiments">
 
 	<div class="race-wrapper">
 		<div class="race-wrapper_inner">
-			<div class="race race__published js-race js-race__alkari">
-				<a href="/races/alkari" class="race_icon">&nbsp;</a>
+
+			<div class="race">
+				<a href="#" class="race_icon">&nbsp;</a>
 				<div class="race_text">
-					<a href="/races/alkari" class="">Alkari Bg</a>
+					<a href="#" class="">Alkari Bg</a>
 				</div>
 			</div>
 
-			<div class="race race__published js-race js-race__alkari">
+			<div class="race">
 				<a href="#">
 					<img src="{{ site.baseurl }}/assets/img/svg-experiments/alkari-oneface-noborders.png" class="race_icon svg-normal-mask" alt="...">
 				</a>
 				<div class="race_text">
-					<a href="/races/alkari" class="">Alkari Img</a>
+					<a href="#" class="">Alkari Img</a>
 				</div>
 			</div>
+
+			<div class="race">
+				<a href="#" class="race_icon2">
+					<svg width="195" height="196">
+						<image xlink:href="{{ site.baseurl }}/assets/img/svg-experiments/alkari-oneface-noborders.png" width="195" height="196" />
+					</svg>
+				</a>
+				<div class="race_text">
+					<a href="#" class="">Alkari Clip</a>
+				</div>
+			</div>
+
 		</div>
 	</div>
-
-	<!--
-	<div>
-		<img src="http://masteroforion.eu/uploads/filer_public/8b/22/8b22ee7e-e06b-403b-8991-6bb1ccb2d1af/alkari.png" alt="...">
-	</div>
-	<hr>
-	-->
-
 </div>
+
+

@@ -2,6 +2,14 @@
 /* # SVG EXPERIMENTS PAGE
 /*-------------------------------------------------------------------------*/
 .svg-experiments {
+	background: url(../img/svg-experiments/bg.gif) #10081B;
+	width: 100%;
+	height: 100%;
+	padding: 20%;
+	overflow: hidden;
+
+
+
 	.race-wrapper {
 		.race-wrapper_inner {
 			margin: auto;
@@ -36,8 +44,8 @@
 					@include transition(all 0.3s linear);
 
 					&.svg-normal-mask {
-						-webkit-mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/stampTiles.svg);
-						mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/stampTiles.svg);
+						-webkit-mask: url(../img/svg-experiments/stampTiles.svg);
+						mask: url(../img/svg-experiments/stampTiles.svg);
 					}
 				}
 
@@ -70,5 +78,23 @@
 			}
 		}
 	}
+
+
+
+	.race_icon2 image {
+		clip-path: url(#clipping);
+	}
+
+
+	// .svg-defs {
+	// 	display: block;
+	// }
+
 }
+
+	.svg-defs {
+		// display: none;
+	}
+
+
 
