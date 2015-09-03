@@ -60,8 +60,9 @@
 				img.race_avatar {
 					position: relative;
 					z-index: 3;
-					opacity: 0.6;
+					opacity: 0.75;
 					@include transition(all 0.3s linear);
+					@include transform(translateZ(0));
 				}
 
 				.race_text {
