@@ -34,25 +34,25 @@
 
 					&.race_background {
 						z-index: 1;
+						opacity: 0;
 
 						path {
-							opacity: 0;
 						}
 					}
 
 					&.race_border {
 						z-index: 3;
+						opacity: 0.25;
 
 						path {
-							opacity: 0.25;
 						}
 					}
 
 					&.race_border-selected {
 						z-index: 4;
+						opacity: 0;
 
 						path {
-							opacity: 0;
 						}
 					}
 				}
@@ -83,7 +83,7 @@
 							opacity: 1;
 					}
 
-					svg.race_border path {
+					svg.race_border {
 						opacity: 0.5;
 					}
 
@@ -92,9 +92,8 @@
 					}
 				}
 
-				&:active,
 				&.race-selected {
-					svg.race_background path {
+					svg.race_background {
 						opacity: 0.15;
 					}
 
@@ -102,11 +101,11 @@
 							opacity: 1;
 					}
 
-					svg.race_border path {
+					svg.race_border {
 						opacity: 0.5;
 					}
 
-					svg.race_border-selected path {
+					svg.race_border-selected {
 						opacity: 0.5;
 					}
 
