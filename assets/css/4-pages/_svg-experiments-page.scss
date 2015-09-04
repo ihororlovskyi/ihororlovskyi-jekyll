@@ -35,7 +35,8 @@
 				height: 196px;
 				@include transition(all 0.3s linear);
 
-				path {
+				path,
+				polygon {
 					fill: #fff;
 				}
 
@@ -51,7 +52,7 @@
 					overflow: hidden;
 				}
 
-				&.race_icon {
+				&.race_emblem {
 					position: relative;
 					z-index: 2;
 					opacity: 0.25;
@@ -87,7 +88,7 @@
 					opacity: 1;
 				}
 
-				svg.race_icon {
+				svg.race_emblem {
 					opacity: 0.5;
 				}
 
@@ -102,7 +103,7 @@
 
 			&.race-selected {
 				svg.race_background {
-					opacity: 0.15;
+					opacity: 0.075;
 				}
 
 				svg.race_avatar {
