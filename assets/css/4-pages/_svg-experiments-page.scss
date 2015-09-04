@@ -20,7 +20,7 @@
 		margin: auto;
 		max-width: 1266px;
 
-		a.race {
+		.race {
 			width: 195px;
 			height: 234px;
 			display: inline-block;
@@ -48,6 +48,14 @@
 					position: relative;
 					z-index: 2;
 					opacity: 0.75;
+					overflow: hidden;
+				}
+
+				&.race_icon {
+					position: relative;
+					z-index: 2;
+					opacity: 0.25;
+					@include transform(scale(0.65));
 				}
 
 				&.race_border {
@@ -77,6 +85,10 @@
 			&:hover {
 				svg.race_avatar {
 					opacity: 1;
+				}
+
+				svg.race_icon {
+					opacity: 0.5;
 				}
 
 				svg.race_border {
