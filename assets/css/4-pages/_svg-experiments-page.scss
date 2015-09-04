@@ -21,52 +21,48 @@
         }
 
         .race {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 195px;
             height: 234px;
             display: inline-block;
             margin: 0 5px;
             position: relative;
 
-            svg {
+            span.race_background {
                 position: absolute;
                 top: 0;
                 left: 0;
+                z-index: 1;
+                opacity: 0;
+                display: block;
+                background: url(../img/svg-experiments/background.svg);
+                width: 195px;
+                height: 196px;
+            }
+
+            svg.race_avatar {
+                position: relative;
+                z-index: 2;
+                opacity: 0.75;
                 width: 195px;
                 height: 196px;
                 @include transition(all 0.3s linear);
-
-                path,
-                polygon {
-                    fill: #fff;
-                }
-
-                &.race_background {
-                    z-index: 1;
-                    opacity: 0;
-                }
-
-                &.race_avatar {
-                    position: relative;
-                    z-index: 2;
-                    opacity: 0.75;
-                    overflow: hidden;
-                }
-
-                &.race_border {
-                    z-index: 3;
-                    opacity: 0.25;
-                }
-
-                &.race_border_current {
-                    z-index: 3;
-                    opacity: 0;
-                }
-
-                &.race_border_special {
-                    z-index: 3;
-                    opacity: 0;
-                }
             }
+
+            span.race_border {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 3;
+                display: block;
+                opacity: 0.2;
+                width: 195px;
+                height: 196px;
+                background: url(../img/svg-experiments/border.svg);
+                @include transition(all 0.3s linear);
+              }
 
             span.race_title {
                 display: block;
@@ -81,24 +77,28 @@
                 @include transition(all 0.3s linear);
             }
 
+            &:hover {
+                span.race_title {
+                    color: #fff;
+                }
+            }
+
             &.race__published {
+
                 &:hover {
                     svg.race_avatar {
                         opacity: 1;
                     }
 
-                    svg.race_border {
-                        opacity: 0.5;
-                    }
-
-                    span.race_title {
-                        color: #fff;
+                    span.race_border {
+                        opacity: 0.4;
                     }
                 }
             }
 
             &.race__current {
-                svg.race_background {
+
+                span.race_background {
                     opacity: 0.06;
                 }
 
@@ -106,35 +106,17 @@
                     opacity: 1;
                 }
 
-                svg.race_border {
-                    opacity: 0;
-                }
-
-                svg.race_border_current {
-                    opacity: 0.5;
+                span.race_border {
+                    opacity: 0.4;
+                    background: url(../img/svg-experiments/border_current.svg);
                 }
             }
 
             &.race__special {
-                svg.race_background {
-                    opacity: 0.075;
-                }
 
-                svg.race_avatar {
+                span.race_border {
                     opacity: 1;
-                }
-
-                svg.race_border {
-                    opacity: 0;
-                }
-
-                svg.race_border_special {
-                    opacity: 1;
-
-                    path,
-                    polygon {
-                        fill: #ffd951;
-                    }
+                    background: url(../img/svg-experiments/border_special.svg);
                 }
             }
         }
