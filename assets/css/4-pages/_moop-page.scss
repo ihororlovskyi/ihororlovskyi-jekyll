@@ -31,7 +31,9 @@ svg.race-clipping {
             margin: 0 5px;
             position: relative;
 
-            span.race_background {
+            // background
+            &:before {
+                content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -43,6 +45,7 @@ svg.race-clipping {
                 height: 196px;
             }
 
+            // avatar
             svg.race_avatar {
                 position: relative;
                 z-index: 2;
@@ -52,7 +55,9 @@ svg.race-clipping {
                 @include transition(all 0.3s linear);
             }
 
-            span.race_border {
+            // border
+            &:after {
+                content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -63,9 +68,10 @@ svg.race-clipping {
                 height: 196px;
                 background: url(../img/moop/border.svg);
                 @include transition(all 0.3s linear);
-              }
+            }
 
-            span.race_title {
+            // text
+            span.race_text {
                 display: block;
                 letter-spacing: 0.8px;
                 line-height: 15px;
@@ -78,26 +84,24 @@ svg.race-clipping {
                 @include transition(all 0.3s linear);
             }
 
-            &:hover {
-                span.race_title {
-                    color: #fff;
-                }
-            }
-
             &.race__published {
+                &:hover {
+                    svg.race_avatar {
+                        opacity: 1;
+                    }
 
-                svg.race_avatar {
-                    opacity: 1;
-                }
+                    &:after {
+                        opacity: 0.5;
+                    }
 
-                span.race_border {
-                    opacity: 0.4;
+                    span.race_text {
+                        color: #fff;
+                    }
                 }
             }
 
             &.race__current {
-
-                span.race_background {
+                &:before {
                     opacity: 0.06;
                 }
 
@@ -105,17 +109,28 @@ svg.race-clipping {
                     opacity: 1;
                 }
 
-                span.race_border {
+                &:after {
                     opacity: 0.4;
                     background: url(../img/moop/border_current.svg);
+                }
+
+                &:hover {
+                    span.race_text {
+                        color: #fff;
+                    }
                 }
             }
 
             &.race__special {
-
-                span.race_border {
+                &:after {
                     opacity: 1;
                     background: url(../img/moop/border_special.svg);
+                }
+
+                &:hover {
+                    span.race_text {
+                        color: #fff;
+                    }
                 }
             }
         }
