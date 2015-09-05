@@ -1,10 +1,10 @@
 /*-------------------------------------------------------------------------*/
 /* # FOOTER
 /*-------------------------------------------------------------------------*/
-footer.footer {
-	padding: 60px 10%;
+footer {
+	padding: 100px 10% 150px;
 	width: 100%;
-	background-image:repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255,255,255,.1) 3px, rgba(255,255,255,.1) 6px);
+	// background-image:repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255,255,255,.1) 3px, rgba(255,255,255,.1) 6px);
 
 	h4 {
 		// margin: 0;
@@ -20,6 +20,21 @@ footer.footer {
 		a {
 			display: inline-block;
 			margin: 0 10px; 
+		}
+
+		&.social {
+			a {
+				font-size: 24px;
+				&.hide {
+					display: none;
+				}
+				i.fa {
+					
+				}
+				span {
+					display: none;
+				}
+			}
 		}
 	}
 }

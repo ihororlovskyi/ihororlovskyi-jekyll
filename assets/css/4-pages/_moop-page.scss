@@ -1,8 +1,14 @@
 /*-------------------------------------------------------------------------*/
-/* # SVG EXPERIMENTS
+/* # MOOP PAGE
 /*-------------------------------------------------------------------------*/
-.svg-experiments {
-    background: #10081B url(../img/svg-experiments/bg.gif);
+svg.race-clipping {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.moop {
+    background: #10081B url(../img/moop/bg.gif);
     width: 100%;
     min-height: 120%;
     padding-top: 10%;
@@ -14,11 +20,6 @@
         margin: auto;
         max-width: 1266px;
 
-        svg.race-clipping {
-            position: absolute;
-            width: 0;
-            height: 0;
-        }
 
         .race {
             position: absolute;
@@ -37,7 +38,7 @@
                 z-index: 1;
                 opacity: 0;
                 display: block;
-                background: url(../img/svg-experiments/background.svg);
+                background: url(../img/moop/background.svg);
                 width: 195px;
                 height: 196px;
             }
@@ -60,7 +61,7 @@
                 opacity: 0.2;
                 width: 195px;
                 height: 196px;
-                background: url(../img/svg-experiments/border.svg);
+                background: url(../img/moop/border.svg);
                 @include transition(all 0.3s linear);
               }
 
@@ -85,13 +86,13 @@
 
             &.race__published {
 
-                // svg.race_avatar {
-                //     opacity: 1;
-                // }
+                svg.race_avatar {
+                    opacity: 1;
+                }
 
-                // span.race_border {
-                //     opacity: 0.4;
-                // }
+                span.race_border {
+                    opacity: 0.4;
+                }
             }
 
             &.race__current {
@@ -106,7 +107,7 @@
 
                 span.race_border {
                     opacity: 0.4;
-                    background: url(../img/svg-experiments/border_current.svg);
+                    background: url(../img/moop/border_current.svg);
                 }
             }
 
@@ -114,7 +115,7 @@
 
                 span.race_border {
                     opacity: 1;
-                    background: url(../img/svg-experiments/border_special.svg);
+                    background: url(../img/moop/border_special.svg);
                 }
             }
         }
