@@ -1,3 +1,6 @@
+$race_width: 195px;
+$race_height: 196px;
+
 /*-------------------------------------------------------------------------*/
 /* # MOOP PAGE
 /*-------------------------------------------------------------------------*/
@@ -33,16 +36,15 @@ svg.race-clipping {
 
             // background
             &:before {
+                background: url(../img/moop/background.svg);
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 1;
                 opacity: 0;
-                display: block;
-                background: url(../img/moop/background.svg);
-                width: 195px;
-                height: 196px;
+                width: $race_width;
+                height: $race_height;
             }
 
             // avatar
@@ -50,23 +52,22 @@ svg.race-clipping {
                 position: relative;
                 z-index: 2;
                 opacity: 0.75;
-                width: 195px;
-                height: 196px;
+                width: $race_width;
+                height: $race_height;
                 @include transition(all 0.3s linear);
             }
 
             // border
             &:after {
+                background: url(../img/moop/border.svg);
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 3;
-                display: block;
                 opacity: 0.2;
-                width: 195px;
-                height: 196px;
-                background: url(../img/moop/border.svg);
+                width: $race_width;
+                height: $race_height;
                 @include transition(all 0.3s linear);
             }
 
