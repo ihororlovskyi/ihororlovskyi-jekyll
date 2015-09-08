@@ -4,7 +4,7 @@ markdown: kramdown
 permalink: /:title/
 
 host: 0.0.0.0
-port: 1101
+port: 7001
 
 exclude: ['README.md']
 
