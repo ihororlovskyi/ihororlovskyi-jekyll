@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>{% if page.title %}{{ page.title }} · {% endif %}Ihor Orlovskyi{% if page.titleAfter %} · {{ page.titleAfter }}{% endif %}</title>
-	<meta name="description" content="{{ page.meta }}">
-	<meta name="keywords" content="{{ page.keywords }}">
-	<meta name="author" content="Ihor Orlovskyi">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}Ihor Orlovskyi{% if page.titleAfter %} · {{ page.titleAfter }}{% endif %}</title>
+    <meta name="description" content="{{ page.meta }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="author" content="Ihor Orlovskyi">
 
-	<link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
-	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=cyrillic-ext,vietnamese,latin-ext,latin,cyrillic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	<link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-57.png">
+    <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=cyrillic-ext,vietnamese,latin-ext,latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick-theme.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-57.png">
 
-	<meta name="p:domain_verify" content="ba54fda422c221b603d33484c02bf917"/>
+    <meta name="p:domain_verify" content="ba54fda422c221b603d33484c02bf917"/>
 </head>
 <body class="waypoint" data-animate-down="fx-down" data-animate-up="fx-up">
 
-	{{ content }}
+    {{ content }}
 
-	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-2.1.1.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/vendor/waypoints.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-64090017-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/waypoints.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-64090017-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>
