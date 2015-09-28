@@ -1,0 +1,140 @@
+/*-------------------------------------------------------------------------*/
+/* # WOWPP PAGE
+/*-------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'WarHeliosCondC';
+    src: url('../fonts/warhelioscondc/warhelioscondc-webfont.eot');
+    src: url('../fonts/warhelioscondc/warhelioscondc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/warhelioscondc/warhelioscondc-webfont.woff') format('woff'),
+         url('../fonts/warhelioscondc/warhelioscondc-webfont.ttf') format('truetype'),
+         url('../fonts/warhelioscondc/warhelioscondc-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main.wowpp {
+    background: #000 url(../img/wowpp/background.jpg) top center no-repeat;
+    position: relative;
+    top: 0;
+    font-family: 'WarHeliosCondC';
+    font-weight: 400;
+    text-align: left;
+
+    nav.top-menu {
+        width: 100%;
+        height: 28px;
+        background: #000;
+    }
+
+    section.wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+
+        .hot-widget {
+            position: absolute;
+            top: 81px;
+            right: 0;
+            width: 315px;
+            height: 99px;
+            box-shadow: 0 -10px 10px -10px rgba(0,0,0,0.7),10px 0 10px -10px rgba(0,0,0,0.7),-10px 0 10px -10px rgba(0,0,0,0.7);
+            background: #000 url(../img/wowpp/hot-bg.png) center repeat;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 24px;
+                right: 0;
+                width: 81px;
+                height: 149px;
+                background: url(../img/wowpp/girl.png) top center no-repeat;
+            }
+
+            .hot-caption {
+                padding-left: 12px;
+                padding-right: 81px;
+                font-size: 18px;
+                line-height: 34px;
+                height: 34px;
+                background: rgba(#fff, .05);
+                text-shadow: -1px -1px 4px #000;
+                border-bottom: 1px solid rgba(#000, .5);
+            }
+            .slick-prev,
+            .slick-next {
+                top: 0;
+                margin-top: 0;
+                width: 31px;
+                height: 33px;
+            }
+            .slick-prev {
+                left: 0;
+                
+            }
+            .slick-next {
+                right: auto;
+                top: 33px;
+            }
+            .slick-dots {
+                bottom: auto;
+                top: 0;
+                left: 31px;
+                width: 3px;
+
+                li {
+                    display: block;
+                    margin: 1px 0;
+                    width: 2px;
+
+                    button {
+                        padding: 0;
+                        width: 2px;
+                        height: 33%;
+
+                        &:before {
+                            width: 100%;
+                            height: 100%;
+                            content: '';
+                            background: #fff;
+                        }
+                    }
+                    &.slick-active button:before {
+                        background: #a98240;
+                    }
+                }
+            }
+            .slick-list {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 282px;
+
+                .slick-slide {
+                    height: 65px;
+                    outline: none;
+                    display: table;
+
+
+                    a {
+                        display: block;
+                        padding-left: 20px;
+                        padding-right: 81px;
+                        color: #fdc25e;
+                        font-size: 15px;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        img.content {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            margin-top: 190px;
+            box-shadow: 0 -10px 10px -10px rgba(0,0,0,0.7),10px 0 10px -10px rgba(0,0,0,0.7),-10px 0 10px -10px rgba(0,0,0,0.7);
+        }
+    }
+}
