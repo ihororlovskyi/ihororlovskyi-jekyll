@@ -1,0 +1,24 @@
+section.svg-stroke {
+    padding: 50px 30%;
+
+}
+
+#eagle {
+
+        fill: none;
+        stroke: #8e44ad;
+        stroke-width: 3;
+        stroke-miterlimit: 3;
+        stroke-dasharray: 5000;
+        stroke-dashoffset: 0;
+        @include animation(dash 8s linear);
+}
+
+@include keyframes(dash) {
+  from {
+    stroke-dashoffset: 5000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
