@@ -10,5 +10,5 @@ exclude: ['README.md']
 
 sass:
   sass_dir: assets/css
-  style: :compressed
+  style: :expanded
 
