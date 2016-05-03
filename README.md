@@ -1,7 +1,15 @@
 # Ihor Orlovskyi
 
-Web development of Ihor Orlovskyi site
+Web development of Ihor Orlovskyi portfolio site
 
-Used [jekyll](http://jekyllrb.com), [sass](http://sass-lang.com) with [bourbon](http://bourbon.io)
+### Run
+
+`npm i`
+
+`npm start` or `gulp`
+
+### Cast
+
+Front-end by [Ihor Orlovskyi](http://ihororlovskyi.com) (Lead Front-end Engineer at [Lucky Labs](http://lucky-labs.com) & [Rooster Studio](http://rooooster.com) Owner)
 
 Proudly hosted by [GitHub Pages](https://pages.github.com)
