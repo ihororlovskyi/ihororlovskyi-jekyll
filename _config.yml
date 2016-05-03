@@ -1,12 +1,3 @@
-# baseurl: '/orlyatko'
-# permalink: /:title/
-# exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'CNAME']
-
-baseurl:
+baseurl: ''
 permalink: /:title/
-
-exclude: ['README.md']
-
-sass:
-  sass_dir: assets/css
-  style: :expanded
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'CNAME']
