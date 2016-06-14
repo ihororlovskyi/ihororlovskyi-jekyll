@@ -25,13 +25,10 @@ $slick-loader-path: "../img/slick/";
 @import "3-modules/refills-footer-2";
 @import "3-modules/refills-parallax-window";
 @import "3-modules/refills-article-geometric";
+@import 'footer';
 
 // pages
 @import '4-pages/index-page';
 @import '4-pages/refills-page';
-@import '4-pages/moop-page';
 @import '4-pages/wowpp-page';
 @import '4-pages/parus-page';
-
-// new concept
-@import 'footer';
