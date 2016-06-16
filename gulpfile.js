@@ -59,9 +59,9 @@ gulp.task('sass', function () {
 /* Js */
 gulp.task('jsConcat', ['sass'], function () {
     return gulp.src([
-            'assets/js/lib/*',
-            'assets/js/vendor/*',
-            'assets/js/common/*'
+            '_js/lib/*',
+            '_js/vendor/*',
+            '_js/common/*'
         ])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('assets/js'));
@@ -80,13 +80,13 @@ gulp.task('jsMin', ['jsConcat'], function () {
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('_scss/**/*', ['sass']);
     gulp.watch([
+        '_posts/**/*',
         '_layouts/**/*.html',
         '_includes/**/*',
-        '_posts/**/*',
-        '_data/*',
+        '_/js/**/*',
+        '_data/*.*',
         'assets/img/**/**/**/**/*.*',
-        'assets/fonts/*',
-        'assets/js/**/*',
+        'assets/fonts/**/**/*.*',
         '_config.yml',
         '_config_dev.yml'
     ], ['jekyll-rebuild']);

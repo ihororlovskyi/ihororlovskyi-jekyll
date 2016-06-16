@@ -1,9 +1,3 @@
-$slick-font-path: "../fonts/slick/";
-$slick-loader-path: "../img/slick/";
-
-@import '1-tools/slick/slick';
-@import '1-tools/slick/slick-theme';
-
 // tools
 @import '1-tools/bourbon/bourbon';
 @import '1-tools/base/grid-settings';
@@ -30,4 +24,3 @@ $slick-loader-path: "../img/slick/";
 // pages
 @import '4-pages/index-page';
 @import '4-pages/refills-page';
-@import '4-pages/wowpp-page';
