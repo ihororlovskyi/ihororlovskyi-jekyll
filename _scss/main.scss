@@ -1,18 +1,12 @@
-// tools
-@import '1-tools/bourbon/bourbon';
-@import '1-tools/base/grid-settings';
-@import '1-tools/neat/neat';
-@import '1-tools/base/base';
-@import '1-tools/normalize';
-@import '1-tools/font-awesome';
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/base/grid-settings';
+@import 'vendor/neat/neat';
+@import 'vendor/base/base';
+@import 'vendor/normalize';
+@import 'vendor/font-awesome';
 
-// base
-@import '2-base/vars';
-@import '2-base/base';
-
-// modules
-@import "3-modules/works";
+@import '-vars';
+@import '-base';
+@import "works";
+@import 'home';
 @import 'footer';
-
-// pages
-@import '4-pages/index-page';
