@@ -3,7 +3,7 @@
 * https://github.com/imakewebthings/waypoints
 */
 var $head = $( '.top-back' );
-$('.waypoint').each( function(i) {
+$('.js-waypoint').each( function(i) {
     var $el = $( this ),
         animClassDown = $el.data( 'animateDown' ),
         animClassUp = $el.data( 'animateUp' );
