@@ -78,11 +78,14 @@ gulp.task('jsMin', ['jsConcat'], function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', ['browser-sync'], function () {
-    gulp.watch('_scss/**/*', ['sass']);
+    gulp.watch([
+        '_scss/**/*',
+        '_components/**/*'
+    ], ['sass']);
     gulp.watch([
         '_posts/**/*',
         '_layouts/**/*.html',
-        '_includes/**/*',
+        '_components/**/*',
         '_js/**/*',
         '_data/*.*',
         'assets/img/**/**/**/**/*.*',

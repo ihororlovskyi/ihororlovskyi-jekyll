@@ -10,20 +10,15 @@ layout: compress
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% if page.title %}{{ page.title }} · {% endif %}Ihor Orlovskyi{% if page.titleAfter %} · {{ page.titleAfter }}{% endif %}</title>
-    <meta name="description" content="{{ page.meta }}">
+    <meta name="description" content="{{ page.description }}">
     <meta name="keywords" content="{{ page.keywords }}">
     <meta name="author" content="Ihor Orlovskyi">
 
-    <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
-
-    <meta name="p:domain_verify" content="ba54fda422c221b603d33484c02bf917"/>
 </head>
-<body class="js-waypoint" data-animate-down="fx-down" data-animate-up="fx-up">
+<body>
 
     {{ content }}
 
