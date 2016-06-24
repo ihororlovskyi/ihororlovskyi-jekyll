@@ -3,3 +3,4 @@ permalink: /:title/
 exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json']
 
 includes_dir: ./_components
+data_dir:     ./_components

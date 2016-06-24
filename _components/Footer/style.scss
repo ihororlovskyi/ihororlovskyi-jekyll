@@ -2,7 +2,13 @@
     padding: 100px 10% 150px;
     width: 100%;
 
-    h4 {
+    &__title {
+        color: $accent-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 0 .75em;
     }
 
     nav {
@@ -37,4 +43,3 @@
         }
     }
 }
-

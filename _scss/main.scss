@@ -1,12 +1,20 @@
+// Variables
+@import '-vars';
+
+// Vendor
+@import '../node_modules/coriolan-ui/coriolan-ui';
 @import 'vendor/bourbon/bourbon';
 @import 'vendor/base/grid-settings';
 @import 'vendor/neat/neat';
 @import 'vendor/base/base';
-@import 'vendor/normalize';
 @import 'vendor/font-awesome';
 
-@import '-vars';
+// UI
+// @import 'ui/ui-buttons';
+// @import 'ui/ui-fields';
+
+// UX
 @import '-base';
 @import '_components/BackFx/style';
-@import 'works';
-@import 'footer';
+@import '_components/Projects/style';
+@import '_components/Footer/style';

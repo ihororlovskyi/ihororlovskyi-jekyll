@@ -1,0 +1,99 @@
+@mixin btn {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    padding: 9px 22px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+    }
+}
+
+@mixin btn--primary {
+    background: #ca1e10;
+    box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000;
+    transition: box-shadow .2s ease;
+
+    &:hover {  
+        box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;     
+    }
+
+    &:active {  
+        box-shadow: 0 0 10px #fe0000;
+    }
+}
+
+@mixin btn--ghost {
+    background: transparent;
+    border-color: rgba(#fff,.4);
+    transition: background-color .2s ease, border-color .2s ease;
+
+    &:hover {
+        background-color: #666;
+        border-color: #666;
+    }
+
+    &:active {
+        background-color: #4D4D4D;
+        border-color: #4D4D4D;
+    }
+}
+
+// Size
+@mixin btn--sm {
+    padding: 4px 17px;
+}
+
+@mixin btn--md {
+    padding: 8px 22px;
+}
+
+@mixin btn--lg {
+}
+
+// Social
+@mixin btn--fb {
+    color: #ccc;
+    background: #fff;
+}
+
+@mixin btn--tw {
+    color: #ccc;
+    background: #fff;
+}
+
+// Unique
+@mixin btn--hero {
+    background: radial-gradient(transparent, rgba(#ff0000,.5));
+    font-size: 22px;
+    font-weight: 500;
+    padding: 8px 22px;
+    color: #f1f9c7;
+    text-shadow: 0 0 4px #fe0000, 0 0 4px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
+    border: 2px solid #f1f9c7;
+    box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000, inset 0 0 10px #fe0000, inset 0 0 20px #fe0000;
+    min-width: 145px;
+    line-height: 30px;
+
+    @include media(S) {
+        font-size: 32px;
+        padding: 15px 22px;
+        min-width: 205px;
+    }
+}
+
+@mixin btn--link {
+    border-radius: 0;
+    border: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,48 @@
+.projects {
+    margin-top: 100%;
+    text-align: left;
+    padding: 60px 10%;
+    width: 100%;
+    background-image:repeating-linear-gradient(135deg, transparent, transparent 4px, rgba(255,255,255,.1) 4px, rgba(255,255,255,.1) 8px);
+
+    &__title {
+        color: $accent-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        font-size: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 33.33333%;
+        vertical-align: top;
+        box-sizing: border-box;
+        padding: 20px;
+
+        &:hover {
+            background: rgba(#fff,.2);
+        }
+
+        &-title {
+            font-size: 26px;
+            line-height: 1.4;
+        }
+
+        &-description {
+            line-height: 1.4;
+            font-size: 16px;
+        }
+
+        &-company {
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.4;
+        }
+    }
+}

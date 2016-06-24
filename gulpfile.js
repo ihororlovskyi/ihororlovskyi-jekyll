@@ -87,7 +87,6 @@ gulp.task('watch', ['browser-sync'], function () {
         '_layouts/**/*.html',
         '_components/**/*',
         '_js/**/*',
-        '_data/*.*',
         'assets/img/**/**/**/**/*.*',
         'assets/fonts/**/**/*.*',
         '_config.yml',

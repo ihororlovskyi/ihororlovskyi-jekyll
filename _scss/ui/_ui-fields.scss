@@ -1,0 +1,23 @@
+@mixin input {
+    line-height: 20px;
+    padding: 10px 22px;
+    text-align: left;
+    // border: 1px solid #333;
+    border: 1px solid #474747;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: transparent;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    max-height: 40px;
+
+    @include placeholder {
+        color: #808080;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: #fff;
+    }
+}
