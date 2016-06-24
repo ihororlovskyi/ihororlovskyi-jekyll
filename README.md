@@ -10,7 +10,7 @@ Web development of Ihor Orlovskyi portfolio site
 
 ### To Do
 
-* add BEM at Footer
+* add BEM to Footer
 * add icomoon, remove font-awesome
 * add multilanguage pages and links
 
