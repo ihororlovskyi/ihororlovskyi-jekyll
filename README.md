@@ -10,9 +10,11 @@ Web development of Ihor Orlovskyi portfolio site
 
 ### To Do
 
-* add BEM to Footer
+* add BEM for links at Footer
 * add icomoon, remove font-awesome
-* add multilanguage pages and links
+* add multilanguage content
 * clean scss, remove bourbon family 
+
+### Thanks
 
 Proudly hosted by [GitHub Pages](https://pages.github.com)

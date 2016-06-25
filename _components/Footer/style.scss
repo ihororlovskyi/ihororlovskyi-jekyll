@@ -11,31 +11,37 @@
         margin: 0 0 .75em;
     }
 
-    nav {
+    &__menu {
         margin-bottom: 30px;
-
-        p {
-            margin: 0;
-        }
 
         a {
             display: inline-block;
-            margin: 0 10px; 
+            margin: 0 10px;
+            line-height: 30px;
         }
 
-        &.menu {
-            display: none;
-        }
+        &--lang {
+            // display: none;
 
-        &.social {
             a {
-                font-size: 24px;
-                &.hide {
+                text-transform: uppercase;
+            }
+        }
+
+        &--social {
+
+            a {
+
+                &.is-hiden {
                     display: none;
                 }
+
                 i.fa {
-                    
+                    font-size: 24px;
+                    margin-right: 8px;
+                    vertical-align: middle;
                 }
+
                 span {
                     display: none;
                 }
