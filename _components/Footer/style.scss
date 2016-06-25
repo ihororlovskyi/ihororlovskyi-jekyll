@@ -12,16 +12,15 @@
     }
 
     &__menu {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
         a {
             display: inline-block;
             margin: 0 10px;
-            line-height: 30px;
         }
 
         &--lang {
-            // display: none;
+            margin-top: 80px;
 
             a {
                 text-transform: uppercase;
