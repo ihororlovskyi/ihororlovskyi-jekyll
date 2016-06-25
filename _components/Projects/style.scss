@@ -1,9 +1,10 @@
 .projects {
     margin-top: 100%;
     text-align: left;
-    padding: 60px 10%;
+    padding: 60px 8%;
     width: 100%;
-    background-image:repeating-linear-gradient(135deg, transparent, transparent 4px, rgba(255,255,255,.1) 4px, rgba(255,255,255,.1) 8px);
+    background-image: repeating-linear-gradient(135deg, rgba(#fff,.0), rgba(#fff,.0) 4px, rgba(#fff,.1) 4px, rgba(#fff,.1) 8px);
+    box-sizing: border-box;
 
     &__title {
         color: $accent-color;
@@ -19,13 +20,26 @@
     }
 
     &__item {
+        position: relative;
         display: inline-block;
-        width: 33.33333%;
+        width: 100%;
         vertical-align: top;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 20px 20px 40px;
+        color: rgba(#fff,.6);
+        background: rgba(#fff,.0);
+        transition: background .5s ease, color .5s ease;
+
+        @include media(M) {
+            width: 50%;
+        }
+
+        @include media(XL) {
+            width: 33.33333%;
+        }
 
         &:hover {
+            color: rgba(#fff,.9);
             background: rgba(#fff,.2);
         }
 
@@ -40,9 +54,20 @@
         }
 
         &-company {
+            padding: 0 20px;
             font-size: 14px;
             font-style: italic;
             line-height: 1.4;
+            position: absolute;
+            right: 100%;
+            transition: right .5s ease, transform .5s ease;
+            @include ellipsis;
+            transform: translate3d(100%,0,0);
+
+            .projects__item:hover & {
+                right: 0;
+                transform: translate3d(0,0,0);
+            }
         }
     }
 }

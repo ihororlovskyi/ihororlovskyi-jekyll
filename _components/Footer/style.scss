@@ -1,6 +1,7 @@
 .footer {
     padding: 100px 10% 150px;
     width: 100%;
+    box-sizing: border-box;
 
     &__title {
         color: $accent-color;
