@@ -47,6 +47,10 @@ gulp.task('sass', function () {
     return gulp.src([
             '_scss/main.scss'
         ])
+        .pipe(plumber(function(error) {
+            gutil.log(gutil.colors.red(error.message));
+            this.emit('end');
+        }))
         .pipe(sass({
             includePaths: ['scss'],
             outputStyle: 'compressed',
