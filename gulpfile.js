@@ -4,7 +4,9 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     cp = require('child_process'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    gutil = require('gulp-util'),
+    plumber = require('gulp-plumber');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -69,6 +71,10 @@ gulp.task('jsConcat', ['sass'], function () {
 
 gulp.task('jsMin', ['jsConcat'], function () {
     return gulp.src('assets/js/all.js')
+        .pipe(plumber(function(error) {
+            gutil.log(gutil.colors.red(error.message));
+            this.emit('end');
+        }))
         .pipe(uglify())
         .pipe(gulp.dest('assets/js'));
 });
@@ -79,8 +85,8 @@ gulp.task('jsMin', ['jsConcat'], function () {
  */
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch([
-        '_scss/**/*',
-        '_components/**/*'
+        '_scss/**/*.scss',
+        '_components/**/*.scss',
     ], ['sass']);
     gulp.watch([
         '_posts/**/*',
