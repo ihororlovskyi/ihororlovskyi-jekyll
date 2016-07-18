@@ -15,6 +15,12 @@ Web development of Ihor Orlovskyi portfolio site
 * add multilanguage content
 * clean scss, remove bourbon family 
 
-### Thanks
+### Used
+
+Streaming build system - [Gulp](http://gulpjs.com)
+
+Static site generator - [Jekyll](https://jekyllrb.com)
+
+SASS/SCSS framework - [Coriolan UI](http://coriolan-ui.github.io)
 
 Proudly hosted by [GitHub Pages](https://pages.github.com)
