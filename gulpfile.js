@@ -100,7 +100,7 @@ gulp.task('fonts', function () {
 // gulp watch
 gulp.task('watch', ['js-min', 'browser-sync'], function () {
     gulp.watch([
-        '_scss/**/*.scss',
+        '_scss/*.scss',
         '_components/**/*.scss',
     ], ['sass']);
     gulp.watch([

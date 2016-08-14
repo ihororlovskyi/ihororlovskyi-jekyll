@@ -14,10 +14,22 @@
 
     &__menu {
         margin-bottom: 40px;
+        // font-size: 0;
 
         a {
             display: inline-block;
-            margin: 0 10px;
+            padding: 0 10px;
+            // font-size: 14px;
+            transition: color .25s ease;
+        }
+
+        &--contact {
+            // margin-top: 80px;
+
+            span[class^="icon-"] {
+                position: relative;
+                top: .1em;
+            }
         }
 
         &--lang {
@@ -35,14 +47,13 @@
                 &.is-hiden {
                     display: none;
                 }
-
-                i.fa {
+                span[class^="icon-"] {
                     font-size: 24px;
                     margin-right: 8px;
                     vertical-align: middle;
                 }
 
-                span {
+                span.link-name {
                     display: none;
                 }
             }

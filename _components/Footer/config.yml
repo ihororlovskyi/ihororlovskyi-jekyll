@@ -1,105 +1,105 @@
 - {
-  id : "linkedin",
+  icon : "linkedin",
   url : "https://www.linkedin.com/in/ihororlovskyi",
   # hide : true
 }
 - {
-  id : "facebook",
+  icon : "facebook",
   url : "http://www.facebook.com/ihororlovskyi",
   # hide : true
 }
 - {
-  id : "github",
+  icon : "github-alt",
   url : "https://github.com/ihororlovskyi",
   # hide : true
 }
 - {
-  id : "soundcloud",
+  icon : "soundcloud",
   url : "https://soundcloud.com/irukanji-music",
   # hide : true
 }
 - {
-  id : "instagram",
+  icon : "instagram",
   url : "https://instagram.com/ihororlovskyi",
   # hide : true
 }
 - {
-  id : "google-plus",
+  icon : "google-plus",
   url : "https://plus.google.com/104535536639391603666",
   # hide : true
 }
 - {
-  id : "twitter",
+  icon : "twitter",
   url : "https://twitter.com/ihororlovskyi",
   # hide : true
 }
 - {
-  id : "vk",
+  icon : "vk",
   url : "https://vk.com/ihororlovskyi",
   hide : true
 }
 - {
-  id : "bandcamp",
+  icon : "bandcamp",
   url : "https://bandcamp.com/ihororlovskyi",
   hide : true
 }
 - {
-  id : "youtube",
+  icon : "youtube",
   url : "https://www.youtube.com/c/igororlovskiy",
   hide : true
 }
 - {
-  id : "tumblr",
+  icon : "tumblr",
   url : "http://ihororlovskyi.tumblr.com",
   hide : true
 }
 - {
-  id : "flickr",
+  icon : "flickr",
   url : "https://www.flickr.com/photos/98661136@N03",
   hide : true
 }
 - {
-  id : "vimeo",
+  icon : "vimeo",
   url : "https://vimeo.com/ihororlovskyi",
   hide : true
 }
 - {
-  id : "foursquare",
+  icon : "foursquare",
   url : "https://foursquare.com/user/53103406",
   hide : true
 }
 - {
-  id : "behance",
+  icon : "behance",
   url : "http://www.behance.net/ihororlovskyi",
   hide : true
 }
 - {
-  id : "dribbble",
+  icon : "dribbble",
   url : "https://dribbble.com/ihororlovskyi",
   hide : true
 }
 - {
-  id : "pinterest",
+  icon : "pinterest-p",
   url : "https://www.pinterest.com/ihororlovskyi",
   hide : true
 }
 - {
-  id : "etsy",
+  icon : "etsy",
   url : "https://www.etsy.com/people/ihororlovskyi",
   hide : true
 }
 - {
-  id : "deviantart",
+  icon : "deviantart",
   url : "http://ihororlovskyi.deviantart.com",
   hide : true
 }
 - {
-  id : "trello",
+  icon : "trello",
   url : "https://trello.com/ihororlovskyi",
   hide : true
 }
 - {
-  id : "gitlab",
+  icon : "gitlab",
   url : "https://gitlab.com/u/ihororlovskyi",
   hide : true
 }

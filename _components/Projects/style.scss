@@ -74,12 +74,12 @@
 
     &__iframe {
         display: block;
+        // display: none;
         border: none;
         width: 100%;
-        height: 540px;
+        height: 580px;
         padding: 0 20%;
         box-sizing: border-box;
-        display: none;
         margin-bottom: 100px;
     }
 }

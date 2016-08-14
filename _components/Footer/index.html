@@ -4,15 +4,15 @@
 
     <nav class="footer__menu footer__menu--contact">
         <div>
-            <i class="fa fa-envelope-o"></i>
+            <span class="icon-envelope-o"></span>
             <a href="mailto:ihororlovskyi@gmail.com?subject=Hello Ihor">ihororlovskyi@gmail.com</a>
         </div>
         <div>
-            <i class="fa fa-skype"></i>
+            <span class="icon-skype"></span>
             sentimony
         </div>
         <div>
-            <i class="fa fa-phone"></i>
+            <span class="icon-mobile"></span>
             +38(095)3452589
         </div>
     </nav>
@@ -22,8 +22,8 @@
     <nav class="footer__menu footer__menu--social">
         {% for i in site.data.Footer.config %}
             <a href="{{ i.url }}" class="{% if i.hide == true %}is-hiden{% endif %}" target="_blank">
-                <i class="fa fa-{{ i.id }}"></i>
-                <span>{{ i.id }}</span>
+                <span class="icon-{{ i.icon }}"></span>
+                <span class="link-name">{{ i.icon }}</span>
             </a>
         {% endfor %}
     </nav>
