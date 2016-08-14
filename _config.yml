@@ -1,5 +1,5 @@
 baseurl: ''
-permalink: /:title/
+include: ['_pages']
 exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'CNAME']
 includes_dir: ./_components
 data_dir: ./_components

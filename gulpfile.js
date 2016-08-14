@@ -1,37 +1,30 @@
 var gulp = require('gulp'),
+    cp = require('child_process'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
-    cp = require('child_process'),
+    gutil = require('gulp-util'),
+    plumber = require('gulp-plumber'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    gutil = require('gulp-util'),
-    plumber = require('gulp-plumber');
+    iconfont = require('gulp-iconfont'),
+    iconfontCss = require('gulp-iconfont-css'),
+    sassUnicode = require('gulp-sass-unicode');
 
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
-/**
- * Build the Jekyll Site
- */
-gulp.task('jekyll-build', ['jsMin'], function (done) {
-    browserSync.notify(messages.jekyllBuild);
+// gulp jekyll-build
+gulp.task('jekyll-build', ['js-min'], function (done) {
+    browserSync.notify('gulp jekyll-build');
     var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
     return cp.spawn(jekyll, ['build', '--config', '_config.yml,_config_dev.yml'], {stdio: 'inherit'})
         .on('close', done);
 });
 
-/**
- * Rebuild Jekyll & do page reload
- */
+// gulp jekyll-rebuild
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
 
-/**
- * Wait for jekyll-build, then launch the Server
- */
+// gulp browser-sync
 gulp.task('browser-sync', ['jekyll-build'], function () {
     browserSync({
         server: {
@@ -40,9 +33,7 @@ gulp.task('browser-sync', ['jekyll-build'], function () {
     });
 });
 
-/**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
- */
+// gulp sass
 gulp.task('sass', function () {
     return gulp.src([
             '_scss/main.scss'
@@ -54,58 +45,78 @@ gulp.task('sass', function () {
         .pipe(sass({
             includePaths: ['scss'],
             outputStyle: 'compressed',
-            onError: browserSync.notify
         }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-        .pipe(gulp.dest('_site/assets/css'))
+        .pipe(sassUnicode())
+        .pipe(prefix(['last 2 versions', 'ie 8', 'ie 9'], { cascade: true }))
+        .pipe(gulp.dest('_site/assets/css/'))
         .pipe(browserSync.reload({stream: true}))
-        .pipe(gulp.dest('assets/css'));
+        .pipe(gulp.dest('assets/css/'));
 });
 
-/* Js */
-gulp.task('jsConcat', ['sass'], function () {
+// gulp js-concat
+gulp.task('js-concat', ['sass'], function () {
     return gulp.src([
             '_js/lib/*',
             '_js/vendor/*',
-            '_js/common/*'
+            '_components/**/*.js',
         ])
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('assets/js'));
+        .pipe(gulp.dest('assets/js/'));
 });
 
-gulp.task('jsMin', ['jsConcat'], function () {
+// gulp js-min
+gulp.task('js-min', ['js-concat'], function () {
     return gulp.src('assets/js/all.js')
         .pipe(plumber(function(error) {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))
         .pipe(uglify())
-        .pipe(gulp.dest('assets/js'));
+        .pipe(concat('all.min.js'))
+        .pipe(gulp.dest('assets/js/'));
 });
 
-/**
- * Watch scss files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
- */
-gulp.task('watch', ['browser-sync'], function () {
+// gulp fonts
+gulp.task('fonts', function () {
+    var fontName = 'svg-font';
+
+    return gulp.src('assets/img/svg-icons/*.svg')
+        .pipe(iconfontCss({
+            fontName: fontName,
+            path: '_scss/vendor/svg-icons/_template.scss',
+            targetPath: '../../_scss/vendor/svg-icons/_font.scss',
+            fontPath: './../fonts/'
+        }))
+        .pipe(iconfont({
+            fontName: fontName,
+            formats: ['svg', 'ttf', 'eot', 'woff', 'woff2'],
+            normalize: true
+        }))
+        .pipe(gulp.dest('_site/assets/fonts/'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('assets/fonts/'));
+});
+
+// gulp watch
+gulp.task('watch', ['js-min', 'browser-sync'], function () {
     gulp.watch([
         '_scss/**/*.scss',
         '_components/**/*.scss',
     ], ['sass']);
     gulp.watch([
-        '_posts/**/*',
-        '_layouts/**/*.html',
-        '_components/**/*',
+        '_layouts/*.html',
+        '_components/**/*.html',
+        '_components/**/*.js',
+        '_components/**/*.yml',
+        '_components/**/*.json',
         '_js/**/*',
+        '_pages/**/*',
+        '_posts/**/*',
         'assets/img/**/**/**/**/*.*',
         'assets/fonts/**/**/*.*',
-        '_config.yml',
         '_config_dev.yml'
     ], ['jekyll-rebuild']);
 });
 
-/**
- * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
- */
-gulp.task('default', ['watch']);
+// gulp
+gulp.task('default', ['sass', 'jekyll-build']);

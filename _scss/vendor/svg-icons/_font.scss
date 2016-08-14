@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "svg-font";
+    src: url('./../fonts/svg-font.eot');
+    src: url('./../fonts/svg-font.eot?#iefix') format('eot'),
+    url('./../fonts/svg-font.woff2') format('woff2'),
+    url('./../fonts/svg-font.woff') format('woff'),
+    url('./../fonts/svg-font.ttf') format('truetype'),
+    url('./../fonts/svg-font.svg#svg-font') format('svg');
+}
+
+.icon, [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "svg-font" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icon-styles {
+    font-family: "svg-font";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+%icon {
+    @include icon-styles;
+}
+
+@function icon-char($filename) {
+    $char: "";
+
+    @if $filename == native-american-eagle {
+    $char: "\E001";
+}
+
+@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+&:#{$insert} {
+    @if $extend {
+        @extend %icon;
+    } @else {
+        @include icon-styles;
+    }
+    content: icon-char($filename);
+}
+}
+
+.icon-native-american-eagle {
+    @include icon(native-american-eagle);
+}
