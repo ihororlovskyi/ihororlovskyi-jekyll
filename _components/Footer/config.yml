@@ -4,13 +4,13 @@
   # hide : true
 }
 - {
-  icon : "facebook",
-  url : "http://www.facebook.com/ihororlovskyi",
+  icon : "github-alt",
+  url : "https://github.com/ihororlovskyi",
   # hide : true
 }
 - {
-  icon : "github-alt",
-  url : "https://github.com/ihororlovskyi",
+  icon : "mixcloud",
+  url : "https://www.mixcloud.com/irukanji-music",
   # hide : true
 }
 - {
@@ -24,14 +24,19 @@
   # hide : true
 }
 - {
+  icon : "facebook",
+  url : "http://www.facebook.com/ihororlovskyi",
+  # hide : true
+}
+- {
   icon : "google-plus",
   url : "https://plus.google.com/104535536639391603666",
-  # hide : true
+  hide : true
 }
 - {
   icon : "twitter",
   url : "https://twitter.com/ihororlovskyi",
-  # hide : true
+  hide : true
 }
 - {
   icon : "vk",

@@ -1,5 +1,5 @@
 .footer {
-    padding: 100px 10% 150px;
+    padding: 120px 10%;
     width: 100%;
     box-sizing: border-box;
 
@@ -33,7 +33,8 @@
         }
 
         &--lang {
-            margin-top: 80px;
+            // margin-top: 80px;
+            // display: none;
 
             a {
                 text-transform: uppercase;
