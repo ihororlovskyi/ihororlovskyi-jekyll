@@ -59,6 +59,11 @@
         }
     }
 
+    .icon-native-american-eagle {
+        position: relative;
+        top: .15em;
+    }
+
     &__petal {
         @include transform(translate(-50%, -50%));
         position: absolute;
