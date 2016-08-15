@@ -76,8 +76,8 @@ gulp.task('js-min', ['js-concat'], function () {
         .pipe(gulp.dest('assets/js/'));
 });
 
-// gulp fonts
-gulp.task('fonts', function () {
+// gulp font
+gulp.task('font', function () {
     var fontName = 'svg-font';
 
     return gulp.src('assets/img/svg-icons/*.svg')
