@@ -89,38 +89,35 @@
     @if $filename == mixcloud {
     $char: "\E010";
 }
-    @if $filename == mobile-phone {
+    @if $filename == mobile {
     $char: "\E011";
 }
-    @if $filename == mobile {
+    @if $filename == native-american-eagle {
     $char: "\E012";
 }
-    @if $filename == native-american-eagle {
+    @if $filename == pinterest-p {
     $char: "\E013";
 }
-    @if $filename == pinterest-p {
+    @if $filename == skype {
     $char: "\E014";
 }
-    @if $filename == skype {
+    @if $filename == soundcloud {
     $char: "\E015";
 }
-    @if $filename == soundcloud {
+    @if $filename == trello {
     $char: "\E016";
 }
-    @if $filename == trello {
+    @if $filename == tumblr {
     $char: "\E017";
 }
-    @if $filename == tumblr {
+    @if $filename == twitter {
     $char: "\E018";
 }
-    @if $filename == twitter {
+    @if $filename == vk {
     $char: "\E019";
 }
-    @if $filename == vk {
-    $char: "\E01A";
-}
     @if $filename == youtube {
-    $char: "\E01B";
+    $char: "\E01A";
 }
 
 @return $char;
@@ -184,9 +181,6 @@
 }
 .icon-mixcloud {
     @include icon(mixcloud);
-}
-.icon-mobile-phone {
-    @include icon(mobile-phone);
 }
 .icon-mobile {
     @include icon(mobile);
