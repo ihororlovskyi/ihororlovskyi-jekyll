@@ -4,12 +4,7 @@
 // Vendor
 @import '../node_modules/coriolan-ui/coriolan-ui';
 @import 'vendor/bourbon/bourbon';
-// @import 'vendor/base/grid-settings';
-// @import 'vendor/neat/neat';
-@import 'vendor/base/base';
 @import 'vendor/svg-icons/font';
-@import 'vendor/jquery-modal/jquery-modal';
-@import 'vendor/fancybox/jquery.fancybox';
 
 // UI
 // @import 'ui/ui-buttons';
@@ -20,5 +15,4 @@
 @import '_components/BackFx/style';
 @import '_components/Projects/style';
 @import '_components/Footer/style';
-@import '_components/PopupMaker/style';
 @import '_components/MixcloudPlayer/style';
