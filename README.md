@@ -6,15 +6,9 @@ Web development of Ihor Orlovskyi portfolio site
 
 ### Run
 
-`npm i`
+    npm i 
 
-`gulp`
-
-### To Do
-
-* add BEM to Footer
-* add multilanguage content
-* clean scss, remove bourbon family 
+    gulp watch
 
 ### Used
 
