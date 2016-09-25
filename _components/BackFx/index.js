@@ -1,7 +1,4 @@
-/**
-* waypoint
-* https://github.com/imakewebthings/waypoints
-*/
+// waypoints
 var $head = $( '.back-fx' );
 $('.js-back-fx').each( function(i) {
     var $el = $( this ),
