@@ -1,21 +1,19 @@
-# Ihor Orlovskyi
-
-### Web Scientist, Front-end Engineer & Psychedelic Musician
+# ihororlovskyi.github.io
 
 Web development of Ihor Orlovskyi portfolio site
 
 ### Run
 
-    npm i 
+`npm i`
 
-    gulp watch
+`gulp watch`
 
 ### Used
 
-Streaming build system - [Gulp](http://gulpjs.com)
+[Gulp](http://gulpjs.com) - build system
 
-Static site generator - [Jekyll](https://jekyllrb.com)
+[Jekyll](https://jekyllrb.com) - static site generator
 
-Front-end concept - [Coriolan UI](http://coriolan-ui.github.io)
+[Coriolan UI](http://coriolan-ui.github.io) - front-end concept
 
-Proudly hosted by [GitHub Pages](https://pages.github.com)
+[GitHub Pages](https://pages.github.com) - free hosting
