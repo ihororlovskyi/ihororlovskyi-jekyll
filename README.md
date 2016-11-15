@@ -14,6 +14,6 @@ Web development of Ihor Orlovskyi portfolio site
 
 [Jekyll](https://jekyllrb.com) - static site generator
 
-[Coriolan UI](http://coriolan-ui.github.io) - front-end concept
+[Coriolan UI](https://coriolan-ui.github.io) - front-end concept
 
 [GitHub Pages](https://pages.github.com) - free hosting
