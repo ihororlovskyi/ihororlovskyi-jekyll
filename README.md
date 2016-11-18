@@ -17,3 +17,5 @@ _Web development of Ihor Orlovskyi portfolio site_
 `npm i`
 
 `gulp watch`
+
+#### Have fun! :)
