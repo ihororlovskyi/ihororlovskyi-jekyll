@@ -18,11 +18,12 @@
     &__list {
         font-size: 0;
         margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
         position: relative;
-        display: inline-block;
         width: 100%;
         vertical-align: top;
         box-sizing: border-box;
