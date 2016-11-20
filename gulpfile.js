@@ -60,19 +60,19 @@ gulp.task('js-concat', ['sass'], function () {
             '_js/vendor/*',
             '_components/**/*.js',
         ])
-        .pipe(concat('all.js'))
+        .pipe(concat('bundle.js'))
         .pipe(gulp.dest('assets/js/'));
 });
 
 // gulp js-min
 gulp.task('js-min', ['js-concat'], function () {
-    return gulp.src('assets/js/all.js')
+    return gulp.src('assets/js/bundle.js')
         .pipe(plumber(function(error) {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))
         .pipe(uglify())
-        .pipe(concat('all.min.js'))
+        .pipe(concat('bundle.min.js'))
         .pipe(gulp.dest('assets/js/'));
 });
 
@@ -101,7 +101,7 @@ gulp.task('font', function () {
 // gulp watch
 gulp.task('watch', ['js-min', 'browser-sync'], function () {
     gulp.watch([
-        '_scss/*.scss',
+        '_scss/**/*',
         '_components/**/*.scss',
     ], ['sass']);
     gulp.watch([
@@ -111,10 +111,11 @@ gulp.task('watch', ['js-min', 'browser-sync'], function () {
         '_components/**/*.yml',
         '_components/**/*.json',
         '_js/**/*',
-        '_pages/**/*',
-        '_posts/**/*',
-        'assets/img/**/**/**/**/*.*',
-        'assets/fonts/**/**/*.*',
+        '_pages/**/*.md',
+        '_posts/**/*.md',
+        'assets/img/**/*',
+        'assets/fonts/**/*',
+        '_config.yml',
         '_config_dev.yml'
     ], ['jekyll-rebuild']);
 });

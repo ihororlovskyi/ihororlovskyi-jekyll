@@ -1,7 +1,8 @@
 ---
 layout: home
+permalink: /pl/
+
 title: Ihor Orlovskyi Portfolio
 description: Ihor Orlovskyi - web scientist, front-end engineer & psychedelic musician from Kyiv, Ukraine
-keywords: front-end, web, portfolio
-permalink: /pl/
+og-image: 'http://rooooster.com/content/newsman/home.jpg'
 ---
