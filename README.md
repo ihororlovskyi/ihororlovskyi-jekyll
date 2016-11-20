@@ -4,7 +4,7 @@ _Web development of Ihor Orlovskyi portfolio site_
 
 ### Used
 
-[Jekyll](https://jekyllrb.com) - static site generator on [Ruby](https://www.ruby-lang.org)
+[Jekyll](https://jekyllrb.com) - static site generator based on [Ruby](https://www.ruby-lang.org)
 
 [Gulp](http://gulpjs.com) - build system
 
