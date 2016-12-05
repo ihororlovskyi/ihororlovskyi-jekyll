@@ -1,5 +1,11 @@
 - {
-  url : "https://codereamertl.com",
+  url : "https://coriolan-ui.github.io",
+  title : "Coriolan UI",
+  description : "Web development of Coriolan UI site",
+  company: "BBQ Agency"
+}
+- {
+  url : "http://codereamertl.com",
   title : "Codereamer",
   description : "Web development of Codereamer Trade Limited site",
   company: "Rooster Studio"
@@ -23,7 +29,7 @@
   company: "Rooster Studio"
 }
 - {
-  url : "http://skoryk-competition.com",
+  url : "http://skoryk-competition.github.io",
   title : "Skoryk Competition 2016",
   description : "Web development of Skoryk Competition 2016 site",
   company: "Rooster Studio"
@@ -95,12 +101,6 @@
   company: "PromoRepublic"
 }
 - {
-  url : "http://ihororlovskyi.com",
-  title : "Ihor Orlovskyi",
-  description : "Web development of Ihor Orlovskyi site",
-  company: "Rooster Studio"
-}
-- {
   url : "http://irukanji-music.com",
   title : "Irukanji",
   description : "Web development of Irukanji site",
@@ -113,7 +113,7 @@
   company: "Rooster Studio"
 }
 - {
-  url : "http://aquadeepmusic.com",
+  url : "http://aquadeepmusic.github.io",
   title : "Aqua Deep Music",
   description : "Web development of Aqua Deep Music site",
   company: "Rooster Studio"
@@ -124,3 +124,10 @@
   description : "Web development of Sentimony Records site",
   company: "Rooster Studio"
 }
+- {
+  url : "http://ihororlovskyi.com",
+  title : "Ihor Orlovskyi",
+  description : "Web development of Ihor Orlovskyi site",
+  company: "Rooster Studio"
+}
+
