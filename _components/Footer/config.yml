@@ -11,7 +11,7 @@
 - {
   icon : "mixcloud",
   url : "https://www.mixcloud.com/irukanji-music",
-  # hide : true
+  hide : true
 }
 - {
   icon : "soundcloud",
