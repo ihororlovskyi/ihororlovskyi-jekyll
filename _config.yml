@@ -1,5 +1,5 @@
 baseurl: ''
 include: ['_pages']
-exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'CNAME']
+exclude: ['README.md', 'package.json', 'node_modules', 'gulpfile.js', 'CNAME']
 includes_dir: ./_components
 data_dir: ./_components
