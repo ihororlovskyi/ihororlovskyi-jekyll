@@ -1,16 +1,16 @@
 @font-face {
-    font-family: "svg-font";
-    src: url('./../fonts/svg-font.eot');
-    src: url('./../fonts/svg-font.eot?#iefix') format('eot'),
-    url('./../fonts/svg-font.woff2') format('woff2'),
-    url('./../fonts/svg-font.woff') format('woff'),
-    url('./../fonts/svg-font.ttf') format('truetype'),
-    url('./../fonts/svg-font.svg#svg-font') format('svg');
+    font-family: "SvgIcons";
+    src: url('./../fonts/SvgIcons/SvgIcons.eot');
+    src: url('./../fonts/SvgIcons/SvgIcons.eot?#iefix') format('eot'),
+    url('./../fonts/SvgIcons/SvgIcons.woff2') format('woff2'),
+    url('./../fonts/SvgIcons/SvgIcons.woff') format('woff'),
+    url('./../fonts/SvgIcons/SvgIcons.ttf') format('truetype'),
+    url('./../fonts/SvgIcons/SvgIcons.svg#SvgIcons') format('svg');
 }
 
 .icon, [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "svg-font" !important;
+    font-family: "SvgIcons" !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -24,7 +24,7 @@
 }
 
 @mixin icon-styles {
-    font-family: "svg-font";
+    font-family: "SvgIcons";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
@@ -98,26 +98,29 @@
     @if $filename == pinterest-p {
     $char: "\E013";
 }
-    @if $filename == skype {
+    @if $filename == rooster-studio {
     $char: "\E014";
 }
-    @if $filename == soundcloud {
+    @if $filename == skype {
     $char: "\E015";
 }
-    @if $filename == trello {
+    @if $filename == soundcloud {
     $char: "\E016";
 }
-    @if $filename == tumblr {
+    @if $filename == trello {
     $char: "\E017";
 }
-    @if $filename == twitter {
+    @if $filename == tumblr {
     $char: "\E018";
 }
-    @if $filename == vk {
+    @if $filename == twitter {
     $char: "\E019";
 }
-    @if $filename == youtube {
+    @if $filename == vk {
     $char: "\E01A";
+}
+    @if $filename == youtube {
+    $char: "\E01B";
 }
 
 @return $char;
@@ -190,6 +193,9 @@
 }
 .icon-pinterest-p {
     @include icon(pinterest-p);
+}
+.icon-rooster-studio {
+    @include icon(rooster-studio);
 }
 .icon-skype {
     @include icon(skype);

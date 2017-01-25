@@ -1,14 +1,13 @@
 // Variables
-@import '-vars';
+@import '-variables';
 
 // Vendor
 @import '../node_modules/coriolan-ui/coriolan-ui';
 @import 'vendor/bourbon/bourbon';
-@import 'vendor/svg-icons/font';
+@import 'vendor/svg-icons/svg-icons';
 
 // UX
 @import '-base';
-@import '_components/BackFx/style';
+@import '_components/BgFx/style';
 @import '_components/Projects/style';
 @import '_components/Footer/style';
-@import '_components/MixcloudPlayer/style';
