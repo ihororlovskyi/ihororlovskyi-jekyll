@@ -60,4 +60,27 @@
             }
         }
     }
+
+    &__rooster {
+        text-align: center;
+        padding: 40px 10px;
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // flex-direction: column;
+            transition: color .25s ease;
+        }
+
+        &-icon {
+            @extend .icon;
+            @extend .icon-rooster-studio;
+            font-size: 60px;
+        }
+
+        &-text {
+            font-size: 10px;
+        }
+    }
 }
