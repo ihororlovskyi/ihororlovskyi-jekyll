@@ -15,5 +15,9 @@
     "gulp-sass-unicode": "^1.0.1",
     "gulp-uglify": "^2.0.0",
     "require-dir": "^0.3.1"
+  },
+  "scripts": {
+    "build": "gulp font && gulp",
+    "start": "gulp font && gulp watch"
   }
 }
