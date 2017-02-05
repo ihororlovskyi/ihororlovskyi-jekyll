@@ -18,6 +18,6 @@
   },
   "scripts": {
     "build": "gulp font && gulp",
-    "start": "gulp font && gulp watch"
+    "develop": "gulp font && gulp watch"
   }
 }
