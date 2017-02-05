@@ -1,6 +1,6 @@
 # ihororlovskyi.github.io
 
-_Web development of Ihor Orlovskyi portfolio site_
+_Web development of Ihor Orlovskyi site_
 
 ### Used
 
@@ -10,12 +10,12 @@ _Web development of Ihor Orlovskyi portfolio site_
 
 [Coriolan UI](https://coriolan-ui.github.io) - mixins pack for [Sass](http://sass-lang.com)
 
-[GitHub Pages](https://pages.github.com) - free hosting
+[Netlify](https://www.netlify.com) - deploy & free hosting platform
 
 ### Run
 
 `npm i`
 
-`npm start`
+`npm run develop`
 
 #### Have fun! :)
