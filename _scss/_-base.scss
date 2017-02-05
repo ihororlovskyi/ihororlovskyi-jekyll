@@ -1,82 +1,63 @@
-// clearfix
-%clearfix {
-    *zoom: 1;
-    &:before,
-    &:after {
-        content: '';
-        display: table;
-    }
-    &:after {clear: both;}
-}
-
-body {
-    @extend %clearfix;
-}
-
-
-
-// Basic Styles
+// basic
 html {
     position: relative;
     height: 100%;
 }
 
 body {
-    // background: $bg-color;
     font-size: 16px;
     line-height: 1.5;
-    // font-family: 'Philosopher', sans-serif;
     font-weight: 700;
     color: $text-color;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    // position: relative;
-    // height: 100%;
     text-align: center;
     margin-bottom: 60px;
 }
 
-
-
-
-
-
-//  Typography
-.gigantic, .huge, .large, .bigger, .big, 
-h1, h2, h3, h4, h5, h6 {
+//  typography
+.gigantic,
+.huge,
+.large,
+.bigger,
+.big, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $accent-color;
     font-weight: 700;
     text-transform: uppercase;
-    // margin: 0 0 20px;
 }
 
-// .gigantic {
-    // font-size: 110px;
-    // line-height: 1.09;
-    // letter-spacing: -2px;
-// }
-
-.huge, h1 {
+.huge,
+h1 {
     font-size: 42px;
     line-height: 1.4;
 }
 
-.large, h2 {
+.large,
+h2 {
     font-size: 34px;
     line-height: 1.4;
 }
 
-.bigger, h3 {
+.bigger,
+h3 {
     font-size: 26px;
     line-height: 1.4;
 }
 
-.big, h4 {
+.big,
+h4 {
     font-size: 16px;
     line-height: 1.4;
 }
 
-.small, small {
+.small,
+small {
     font-size: 10px;
     line-height: 1.2;
 }
@@ -101,23 +82,18 @@ hr {
     height: 0;
 }
 
-
-
-// Links
 a {
     color: $link-color;
     text-decoration: none;
     outline: 0;
-    // @include transition(all 0.2s);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $link-color-hover;
     }
 }
 
-
-
-// Selection colors (easy to forget)
+// selection color
 ::selection {
     background: $selection-color;
 }
@@ -137,9 +113,3 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $selection-color;
 }
-
-
-
-
-
-
