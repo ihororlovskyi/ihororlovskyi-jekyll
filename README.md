@@ -8,7 +8,7 @@ _Web development of Ihor Orlovskyi site_
 
 [Gulp](http://gulpjs.com) - build system based on [NodeJS](https://nodejs.org)
 
-[Coriolan UI](https://coriolan-ui.github.io) - mixins pack for [Sass](http://sass-lang.com)
+[Coriolan UI](https://coriolan-ui.github.io) - [Sass](http://sass-lang.com) mixins pack
 
 [Netlify](https://www.netlify.com) - deploy & free hosting platform
 
