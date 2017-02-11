@@ -1,4 +1,4 @@
-# ihororlovskyi.github.io
+# ihororlovskyi
 
 _Web development of Ihor Orlovskyi site_
 
