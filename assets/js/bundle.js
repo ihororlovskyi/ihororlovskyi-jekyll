@@ -10896,3 +10896,11 @@ $('.js-back-fx').each( function(i) {
         }
     }, { offset: '-25%' } );
 });
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    title: 'Ihor Orlovskyi',
+    subtitle: 'Front-end Developer'
+  }
+})

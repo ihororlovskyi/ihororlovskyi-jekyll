@@ -35,6 +35,13 @@
             margin: 100% 0 0;
             @include transform(translateY(100%));
         }
+
+        &-icon {
+            @extend .icon-native-american-eagle;
+        }
+
+        &-text {
+        }
     }
 
     &__subtitle {
