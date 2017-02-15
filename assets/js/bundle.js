@@ -10900,7 +10900,7 @@ $('.js-back-fx').each( function(i) {
 var app = new Vue({
   el: '#app',
   data: {
-    title: 'Ihor Orlovskyi',
-    subtitle: 'Front-end Developer'
+    title: '<span>Ihor Orlovskyi</span>',
+    subtitle: '<span>Front-end Developer</span>'
   }
 })
