@@ -69,7 +69,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // flex-direction: column;
             transition: color .25s ease;
         }
 
@@ -80,7 +79,11 @@
         }
 
         &-text {
+            text-align: left;
             font-size: 10px;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding-left: .5em;
         }
     }
 }
