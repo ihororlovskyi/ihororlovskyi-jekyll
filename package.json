@@ -2,15 +2,13 @@
   "dependencies": {
     "coriolan-ui": "^0.1.19",
     "normalize.css": "^5.0.0",
-    "nuxt": "latest"
+    "nuxt": "^0.9.9"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0",
     "node-sass": "^4.5.0",
     "sass-loader": "^6.0.2"
   },
   "scripts": {
-    "start": "nuxt",
-    "deploy": "nuxt generate && gh-pages -d dist"
+    "start": "nuxt"
   }
 }

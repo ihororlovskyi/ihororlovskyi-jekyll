@@ -8,16 +8,12 @@ _Web development of Ihor Orlovskyi site_
 
 [Coriolan UI](https://coriolan-ui.github.io) - [Sass](http://sass-lang.com) mixins pack
 
-[Netlify](https://www.netlify.com) - deploy & free hosting platform
+[Netlify](https://www.netlify.com) - automatic deploy & free hosting platform
 
 ### Run
 
 `npm i`
 
 `npm start`
-
-### Deploy
-
-`npm run deploy`
 
 #### Have fun! :)

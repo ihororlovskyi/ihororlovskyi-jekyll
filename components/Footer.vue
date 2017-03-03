@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>2016 - 2017 © Mess division</div>
+    <a href='mailto:ihororlovskyi@gmail.com?subject=Hello Ihor'>ihororlovskyi@gmail.com</a>
   </footer>
 </template>
 
