@@ -4,9 +4,7 @@ _Web development of Ihor Orlovskyi site_
 
 ### Used
 
-[Jekyll](https://jekyllrb.com) - static site generator based on [Ruby](https://www.ruby-lang.org)
-
-[Gulp](http://gulpjs.com) - build system based on [NodeJS](https://nodejs.org)
+[Nuxt.js](https://nuxtjs.org) - framework for server-rendered [Vue.js](https://vuejs.org) applications
 
 [Coriolan UI](https://coriolan-ui.github.io) - [Sass](http://sass-lang.com) mixins pack
 
@@ -16,6 +14,10 @@ _Web development of Ihor Orlovskyi site_
 
 `npm i`
 
-`npm run develop`
+`npm start`
+
+### Deploy
+
+`npm run deploy`
 
 #### Have fun! :)
