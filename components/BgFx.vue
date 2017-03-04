@@ -37,32 +37,6 @@
   z-index: 20;
   color: #c3c3c3;
 
-  img {
-    display: block;
-    max-width: 50px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    letter-spacing: 10px;
-    font-size: 30px;
-    margin: .3em 0;
-
-    @include media(M) {
-      font-size: 50px;
-    }
-  }
-
-  p {
-    letter-spacing: 2px;
-    font-size: 12px;
-    margin: .3em 0;
-
-    @include media(M) {
-      font-size: 18px;
-    }
-  }
-
   &__petal {
     transform: translate3d(-50%,-50%,0);
     position: absolute;
@@ -85,6 +59,35 @@
       position: absolute;
       transition: all 5.25s ease-in-out;
       animation: turn 5.0s ease-in-out infinite;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  h1 {
+    letter-spacing: 10px;
+    font-size: 30px;
+    margin: .3em 0;
+    position: relative;
+
+    @include media(M) {
+      font-size: 50px;
+    }
+  }
+
+  p {
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin: .3em 0;
+    position: relative;
+
+    @include media(M) {
+      font-size: 18px;
     }
   }
 }

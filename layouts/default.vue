@@ -1,8 +1,8 @@
 <template>
   <div class="flex-sticky">
-    <BgFx/>
-    <Header/>
     <div class="flex-sticky__content">
+      <BgFx/>
+      <Header/>
       <nuxt/>
     </div>
     <div class="flex-sticky__footer">

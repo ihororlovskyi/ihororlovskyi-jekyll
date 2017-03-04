@@ -15,6 +15,8 @@
   background: rgba(#000,.5);
   padding: 2em .8em;
   text-transform: uppercase;
+  position: relative;
+  z-index: 30;
 
   &__copyright {
     font-size: .8em;
