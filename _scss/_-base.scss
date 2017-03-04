@@ -95,21 +95,21 @@ a {
 
 // selection color
 ::selection {
-    background: $selection-color;
+  background: $selection-color;
 }
 
 ::-moz-selection {
-    background: $selection-color;
+  background: $selection-color;
 }
 
 img::selection {
-    background: transparent;
+  background: transparent;
 }
 
 img::-moz-selection {
-    background: transparent;
+  background: transparent;
 }
 
 body {
-    -webkit-tap-highlight-color: $selection-color;
+  -webkit-tap-highlight-color: $selection-color;
 }
