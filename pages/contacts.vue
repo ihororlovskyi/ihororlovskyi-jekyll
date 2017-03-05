@@ -1,17 +1,12 @@
 <template>
   <div class="contacts">
-    <div class='footer__title'>Contact:</div>
+    <h1 class='footer__title'>Contacts</h1>
     <p><a href='mailto:ihororlovskyi@gmail.com?subject=Hello, Ihor'>ihororlovskyi@gmail.com</a></p>
     <p>+38(095)3452589</p>
     <div class='footer__title'>Let's be in touch:</div>
-    <!-- <nav class='footer__socnav'>
-      {% for i in site.data.Footer.config %}
-        <a href='{{ i.url }}' class='{% if i.hide == true %}is-hiden{% endif %}' target='_blank'>
-          <span class='icon-{{ i.icon }}'></span>
-          <span class='link-name'>{{ i.icon }}</span>
-        </a>
-      {% endfor %}
-    </nav> -->
+    <nav>
+      <a v-for="(item, key) in contacts" :href="item.url" target="_blank">{{ item.title }}</a>
+    </nav>
   </div>
 </template>
 
@@ -20,29 +15,38 @@ $text-color: #ccc;
 $accent-color: lighten($text-color, 10%);
 
 .contacts {
-  background-color: rgba(#000,.75);
-  padding: 10em .8em;
-  // filter: blur(6px);
-  position: relative;
-  z-index: 25;
 
   &__title {
     color: $accent-color;
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  nav {
+    a {
+      display: inline-block;
+      padding: 1em;
+    }
+  }
 }
 </style>
 
 <script>
+import axios from '~plugins/axios'
+
 export default {
-  layout: 'default',
   head: {
     title: 'Contacts',
     meta: [
       { name: 'description', content: 'Contacts page description' },
       { property: 'og:image', content: 'Contacts page og-image' }
     ]
+  },
+  async data() {
+    const { data } = await axios.get('contacts.json')
+    return {
+      contacts: data
+    }
   }
 }
 </script>

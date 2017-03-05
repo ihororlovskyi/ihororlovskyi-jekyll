@@ -1,12 +1,16 @@
 <template>
   <div class="flex-sticky">
+    <div class="flex-sticky__fractal">
+      <Fractal/>
+    </div>
+    <div class="flex-sticky__header">
+      <MainMenu/>
+    </div>
     <div class="flex-sticky__content">
-      <BgFx/>
-      <Header/>
       <nuxt/>
     </div>
     <div class="flex-sticky__footer">
-      <Footer/>
+      <MainFooter/>
     </div>
   </div>
 </template>
@@ -20,7 +24,7 @@ $link-color-hover: lighten($link-color, 30%);
 
 body {
   // font-family: 'Open Sans', sans-serif;
-  font: 400 14px/1.3 "Lucida Grande","Tahoma","Verdana","Arial",sans-serif,"Roboto",Helvetica,Arial,sans-serif;
+  font: 400 14px/1.5 "Lucida Grande","Tahoma","Verdana","Arial",sans-serif,"Roboto",Helvetica,Arial,sans-serif;
   text-align: center;
   background-color: #111;
   font-size: 16px;
@@ -28,14 +32,15 @@ body {
 }
 
 a {
-    color: $link-color;
-    text-decoration: none;
-    outline: 0;
+  color: $link-color;
+  text-decoration: none;
+  outline: 0;
+  transition: color .2s ease-in-out;
 
-    &:hover,
-    &:focus {
-        color: $link-color-hover;
-    }
+  &:hover,
+  &:focus {
+      color: $link-color-hover;
+  }
 }
 
 img {
@@ -59,8 +64,17 @@ body {
   display: flex;
   flex-direction: column;
 
+  &__fractal {
+  }
+
+  &__header {
+  }
+
   &__content {
     flex: 1;
+    padding: 4em .6em;
+    position: relative;
+    // background-color: #000;
   }
 
   &__footer {
@@ -92,41 +106,15 @@ body {
 </style>
 
 <script>
-import BgFx from '~components/BgFx.vue'
-import Header from '~components/Header.vue'
-import Footer from '~components/Footer.vue'
-// import VueFire from 'vuefire'
-
-// Vue.use(VueFire)
-
-// var config = {
-//   apiKey: "AIzaSyCWdqDWhbNmtjYarGlggOEh-0_466o3kyQ",
-//   authDomain: "ihororlovskyi-938b4.firebaseapp.com",
-//   databaseURL: "https://ihororlovskyi-938b4.firebaseio.com",
-//   storageBucket: "ihororlovskyi-938b4.appspot.com",
-//   messagingSenderId: "132218681986"
-// }
-// firebase.initializeApp(config)
+import Fractal from '~components/Fractal.vue'
+import MainMenu from '~components/MainMenu.vue'
+import MainFooter from '~components/MainFooter.vue'
 
 export default {
   components: {
-    BgFx,
-    Header,
-    Footer
+    Fractal,
+    MainMenu,
+    MainFooter
   }
 }
 </script>
-
-<!-- <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCWdqDWhbNmtjYarGlggOEh-0_466o3kyQ",
-    authDomain: "ihororlovskyi-938b4.firebaseapp.com",
-    databaseURL: "https://ihororlovskyi-938b4.firebaseio.com",
-    storageBucket: "ihororlovskyi-938b4.appspot.com",
-    messagingSenderId: "132218681986"
-  };
-  firebase.initializeApp(config);
-</script>
- -->
