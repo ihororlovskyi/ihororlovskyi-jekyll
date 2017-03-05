@@ -38,8 +38,7 @@ export default {
   head: {
     title: 'Contacts',
     meta: [
-      { name: 'description', content: 'Contacts page description' },
-      { property: 'og:image', content: 'Contacts page og-image' }
+      { name: 'description', content: 'Contacts page description' }
     ]
   },
   async data() {

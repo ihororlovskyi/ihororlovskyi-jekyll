@@ -54,12 +54,10 @@
 import axios from '~plugins/axios'
 
 export default {
-  layout: 'default',
   head: {
     title: 'Portfolio',
     meta: [
-      { name: 'description', content: 'Portfolio page description' },
-      { property: 'og:image', content: 'Portfolio page og-image' }
+      { name: 'description', content: 'Portfolio page description' }
     ]
   },
   async data() {

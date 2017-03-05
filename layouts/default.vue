@@ -10,7 +10,7 @@
       <nuxt/>
     </div>
     <div class="flex-sticky__footer">
-      <MainFooter/>
+      <FooterAlpha/>
     </div>
   </div>
 </template>
@@ -108,13 +108,13 @@ body {
 <script>
 import Fractal from '~components/Fractal.vue'
 import MainMenu from '~components/MainMenu.vue'
-import MainFooter from '~components/MainFooter.vue'
+import FooterAlpha from '~components/FooterAlpha.vue'
 
 export default {
   components: {
     Fractal,
     MainMenu,
-    MainFooter
+    FooterAlpha
   }
 }
 </script>

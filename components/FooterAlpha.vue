@@ -13,7 +13,8 @@
 <style lang="scss">
 .main-footer {
   // background: rgba(#000,.5);
-  background-color: rgba(#fff,.05);
+  // background-color: rgba(#fff,.05);
+  background-color: #000;
   padding: 1.2em .8em;
   position: relative;
   z-index: 30;

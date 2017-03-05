@@ -52,8 +52,7 @@ export default {
   head: {
     title: 'Home',
     meta: [
-      { name: 'description', content: 'Home page description' },
-      { property: 'og:image', content: 'Home page og-image' }
+      { name: 'description', content: 'Home page description' }
     ]
   }
 }
