@@ -29,11 +29,16 @@
     transform: scale(.75);
     transform-origin: top center;
     margin-bottom: -10%;
+    padding: 16px;
+    background: rgba(#fff,.1);
+    border-radius: 8px;
+    box-sizing: border-box;
   }
 
   &__ratio {
     @include ratio(100%,4,3);
     margin: 0 auto;
+    background-image: repeating-linear-gradient(135deg, rgba(#fff,.0), rgba(#fff,.0) 4px, rgba(#fff,.1) 4px, rgba(#fff,.1) 8px);
   }
 
   &__iframe {
@@ -42,10 +47,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 16px;
-    background: rgba(#fff,.1);
-    border-radius: 8px;
-    box-sizing: border-box;
     border: none;
   }
 
@@ -61,9 +62,15 @@
 import axios from '~plugins/axios'
 
 export default {
+  head: {
+    title: 'Site',
+    meta: [
+      { name: 'description', content: '' }
+    ]
+  },
   async data({ route }) {
     const { key } = route.params
-    const { data } = await axios.get(`works/${key}.json`)
+    const { data } = await axios.get(`sites/${key}.json`)
     return {
       site: data
     }

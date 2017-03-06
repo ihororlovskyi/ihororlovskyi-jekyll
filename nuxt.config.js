@@ -24,7 +24,12 @@ module.exports = {
         { key: 'bbq-agency' },
         { key: 'codereamer' },
         { key: 'coriolan-ui' },
-        { key: 'nebo' }
+        { key: 'nebo' },
+        { key: 'newsman' },
+        { key: 'mcriviera' },
+        { key: 'skoryk' },
+        { key: 'vatmanman' },
+        { key: 'rooooster' }
       ]
     }
   }

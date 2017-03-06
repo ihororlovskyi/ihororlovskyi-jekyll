@@ -72,7 +72,7 @@ body {
 
   &__content {
     flex: 1;
-    padding: 4em .6em;
+    padding: 2em .6em;
     position: relative;
     // background-color: #000;
   }

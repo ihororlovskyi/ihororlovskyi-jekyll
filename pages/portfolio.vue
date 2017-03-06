@@ -2,7 +2,7 @@
   <div class="portfolio">
     <h1>Portfolio</h1>
     <nav class="portfolio__list">
-      <div class="portfolio__item" v-for="(site, key) in works">
+      <div class="portfolio__item" v-for="(site, key) in sites">
         <nuxt-link class="portfolio__link" :to="{ path: `/site/${key}`}">{{ site.title }}</nuxt-link>
       </div>
     </nav>
@@ -10,26 +10,33 @@
 </template>
 
 <style lang="scss">
+@import '../node_modules/coriolan-ui/tools/variables';
+@import '../node_modules/coriolan-ui/mixins/media';
+
 .portfolio {
   // background-color: rgba(#000,.05);
   margin: 0 auto;
-  max-width: 777px;
+  max-width: 999px;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: flex-start;
+    // align-items: center;
   }
 
   &__item {
-    flex-basis: (100% / 3);
-  }
-
-  &__link {
-    display: block;
+    background-color: rgba(#fff,.05);
+    flex-basis: (100% / 2);
     position: relative;
-    overflow: hidden;
-    padding: 2em .8em;
+
+    @include media(M) {
+      flex-basis: (100% / 3);
+    }
+
+    @include media(L) {
+      flex-basis: (100% / 4);
+    }
 
     &:before {
       content: '';
@@ -47,6 +54,21 @@
       opacity: 1;
     }
   }
+
+  &__link {
+    display: block;
+    padding: 2em .8em;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 </style>
 
@@ -61,9 +83,9 @@ export default {
     ]
   },
   async data() {
-    const { data } = await axios.get('works.json')
+    const { data } = await axios.get('sites.json')
     return {
-      works: data
+      sites: data
     }
   }
 }
