@@ -1,3 +1,16 @@
+let sitesCicle = [
+  { key: 'bbq-agency' },
+  { key: 'codereamer' },
+  { key: 'coriolan-ui' },
+  { key: 'nebo' },
+  { key: 'newsman' },
+  { key: 'mcriviera' },
+  { key: 'skoryk' },
+  { key: 'vatmanman' },
+  { key: 'rooooster' },
+  { key: 'ihororlovskyi' }
+]
+
 module.exports = {
   head: {
     titleTemplate: '%s | Ihor Orlovskyi',
@@ -24,19 +37,7 @@ module.exports = {
   },
   generate: {
     routeParams: {
-      '/site/:key': [
-        { key: 'bbq-agency' },
-        { key: 'codereamer' },
-        { key: 'coriolan-ui' },
-        { key: 'nebo' },
-        { key: 'newsman' },
-        { key: 'mcriviera' },
-        { key: 'skoryk' },
-        { key: 'vatmanman' },
-        { key: 'rooooster' }
-      ]
+      '/site/:key': sitesCicle
     }
   }
 }
-
-
