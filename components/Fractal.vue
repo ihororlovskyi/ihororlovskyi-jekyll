@@ -1,38 +1,26 @@
 <template>
   <div class="fractal">
-    <div class="fractal__container">
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-      <div class="fractal__petal"></div>
-    </div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
+    <div class="fractal__petal"></div>
   </div>
 </template>
 
 <style lang="scss">
 .fractal {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
-  // padding: 5em .8em;
-  // box-sizing: border-box;
-  // z-index: 20;
-  // opacity: .75;
-
-  &__container {
-    // position: relative;
-    overflow: hidden;
-  }
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 
   &__petal {
     transform: translate3d(-50%,-50%,0);
