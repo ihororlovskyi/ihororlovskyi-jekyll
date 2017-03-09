@@ -50,9 +50,9 @@
 <script>
 export default {
   head: {
-    title: 'Home',
+    title: 'About',
     meta: [
-      { name: 'description', content: 'Home page description' }
+      { name: 'description', content: 'About page description' }
     ]
   }
 }
