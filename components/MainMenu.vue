@@ -5,8 +5,8 @@
         <img class="main-menu__icon-eagle" src="/assets/img/svg-icons/ihororlovskyi.svg">
         About
       </nuxt-link>
-      <nuxt-link class="main-menu__link" to='/portfolio/'>Portfolio</nuxt-link>
-      <nuxt-link class="main-menu__link" to='/contacts/'>Contacts</nuxt-link>
+      <nuxt-link class="main-menu__link" to='/portfolio'>Portfolio</nuxt-link>
+      <nuxt-link class="main-menu__link" to='/contacts'>Contacts</nuxt-link>
     </nav>
   </header>
 </template>

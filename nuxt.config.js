@@ -1,30 +1,3 @@
-let sitesCicle = [
-  { key: 'bbq-agency' },
-  { key: 'codereamer' },
-  { key: 'coriolan-ui' },
-  { key: 'nebo' },
-  { key: 'newsman' },
-  { key: 'mcriviera' },
-  { key: 'skoryk' },
-  { key: 'vatmanman' },
-  { key: 'rooooster' },
-  { key: 'sentimony' },
-  { key: 'promorepublic' },
-  { key: 'promorepublic-blog' },
-  { key: 'masteroforion' },
-  { key: 'worldofwarplanes' },
-  { key: 'worldofwarplanes-blog' },
-  { key: 'tripme' },
-  { key: 'motionups' },
-  { key: 'qubiostudio' },
-  { key: 'artkb' },
-  { key: 'iondigi' },
-  { key: 'irukanji' },
-  { key: 'aquadeep' },
-  { key: 'lookinglook' },
-  { key: 'ihororlovskyi' }
-]
-
 module.exports = {
   head: {
     titleTemplate: '%s | Ihor Orlovskyi',
@@ -50,8 +23,31 @@ module.exports = {
     vendor: ['axios']
   },
   generate: {
-    routes: {
-      '/site/:key': sitesCicle
-    }
+    routes: [
+      '/site/bbq-agency',
+      '/site/codereamer',
+      '/site/coriolan-ui',
+      '/site/nebo',
+      '/site/newsman',
+      '/site/mcriviera',
+      '/site/skoryk',
+      '/site/vatmanman',
+      '/site/rooooster',
+      '/site/sentimony',
+      '/site/promorepublic',
+      '/site/promorepublic-blog',
+      '/site/masteroforion',
+      '/site/worldofwarplanes',
+      '/site/worldofwarplanes-blog',
+      '/site/tripme',
+      '/site/motionups',
+      '/site/qubiostudio',
+      '/site/artkb',
+      '/site/iondigi',
+      '/site/irukanji',
+      '/site/aquadeep',
+      '/site/lookinglook',
+      '/site/ihororlovskyi'
+    ]
   }
 }
