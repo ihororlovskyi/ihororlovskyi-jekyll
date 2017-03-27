@@ -1,9 +1,12 @@
 <template>
   <header class="main-menu">
     <nav class="main-menu__list">
-      <nuxt-link class="main-menu__link" to='/' exact>About</nuxt-link>
-      <nuxt-link class="main-menu__link" to='/portfolio'>Portfolio</nuxt-link>
-      <nuxt-link class="main-menu__link" to='/contacts'>Contacts</nuxt-link>
+      <nuxt-link class="main-menu__link" to='/' exact>
+        <img class="main-menu__icon-eagle" src="/assets/img/svg-icons/ihororlovskyi.svg">
+        About
+      </nuxt-link>
+      <nuxt-link class="main-menu__link" to='/portfolio/'>Portfolio</nuxt-link>
+      <nuxt-link class="main-menu__link" to='/contacts/'>Contacts</nuxt-link>
     </nav>
   </header>
 </template>
@@ -32,6 +35,12 @@
     &.nuxt-link-active {
       background-color: #111;
     }
+  }
+
+  &__icon-eagle {
+    width: 1.1em;
+    transform: translateY(20.5%);
+    margin-right: .5em;
   }
 }
 </style>

@@ -10,7 +10,7 @@
       <nuxt/>
     </div>
     <div class="flex-sticky__footer">
-      <FooterAlpha/>
+      <FooterBlock/>
     </div>
   </div>
 </template>
@@ -46,6 +46,7 @@ a {
 
 img {
   max-width: 100%;
+  display: inline-block;
 }
 
 html {
@@ -109,13 +110,13 @@ body {
 <script>
 import Fractal from '~components/Fractal.vue'
 import MainMenu from '~components/MainMenu.vue'
-import FooterAlpha from '~components/FooterAlpha.vue'
+import FooterBlock from '~components/FooterBlock.vue'
 
 export default {
   components: {
     Fractal,
     MainMenu,
-    FooterAlpha
+    FooterBlock
   }
 }
 </script>
