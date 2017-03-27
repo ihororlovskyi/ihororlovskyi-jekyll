@@ -8,6 +8,7 @@ let sitesCicle = [
   { key: 'skoryk' },
   { key: 'vatmanman' },
   { key: 'rooooster' },
+  { key: 'sentimony' },
   { key: 'ihororlovskyi' }
 ]
 
