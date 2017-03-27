@@ -9,6 +9,19 @@ let sitesCicle = [
   { key: 'vatmanman' },
   { key: 'rooooster' },
   { key: 'sentimony' },
+  { key: 'promorepublic' },
+  { key: 'promorepublic-blog' },
+  { key: 'masteroforion' },
+  { key: 'worldofwarplanes' },
+  { key: 'worldofwarplanes-blog' },
+  { key: 'tripme' },
+  { key: 'motionups' },
+  { key: 'qubiostudio' },
+  { key: 'artkb' },
+  { key: 'iondigi' },
+  { key: 'irukanji' },
+  { key: 'aquadeep' },
+  { key: 'lookinglook' },
   { key: 'ihororlovskyi' }
 ]
 
@@ -18,7 +31,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/ihororlovskyi-vuejs.appspot.com/o/og-ihororlovskyi.jpg?alt=media&token=05c9dc4d-3897-4fb2-99c7-e658ba0b2629' }
+      { property: 'og:image', content: 'https://ihororlovskyi.com/assets/img/og-images/og-ihororlovskyi.jpg' }
     ],
     link: [
       { rel: 'shortcut icon', href: '/assets/img/favicons/favicon-32.png' },
@@ -37,7 +50,7 @@ module.exports = {
     vendor: ['axios']
   },
   generate: {
-    routeParams: {
+    routes: {
       '/site/:key': sitesCicle
     }
   }

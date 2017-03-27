@@ -41,7 +41,7 @@ export default {
       { name: 'description', content: 'Contacts page description' }
     ]
   },
-  async data() {
+  async asyncData() {
     const { data } = await axios.get('contacts.json')
     return {
       contacts: data

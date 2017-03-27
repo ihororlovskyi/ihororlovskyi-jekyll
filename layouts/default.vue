@@ -29,6 +29,7 @@ body {
   background-color: #111;
   font-size: 16px;
   color: $text-color;
+  margin: 0;
 }
 
 a {

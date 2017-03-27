@@ -10,7 +10,7 @@
       <div>
         Link: <a :href="site.url" target="_blank">{{ site.url }}</a>
       </div>
-      <div>
+      <div v-if='site.source'>
         Source: <a :href="site.source" target="_blank">{{ site.source }}</a>
       </div>
     </div>
@@ -68,7 +68,7 @@ export default {
       { name: 'description', content: '' }
     ]
   },
-  async data({ route }) {
+  async asyncData({ route }) {
     const { key } = route.params
     const { data } = await axios.get(`sites/${key}.json`)
     return {

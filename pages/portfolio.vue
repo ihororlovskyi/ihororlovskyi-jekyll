@@ -6,6 +6,7 @@
         <nuxt-link class="portfolio__link" :to="{ path: `/site/${key}`}">{{ site.title }}</nuxt-link>
       </div>
     </nav>
+    <p>and many more . . .</p>
   </div>
 </template>
 
@@ -23,6 +24,7 @@
     flex-wrap: wrap;
     // justify-content: flex-start;
     // align-items: center;
+    margin-bottom: 2em;
   }
 
   &__item {
@@ -82,7 +84,7 @@ export default {
       { name: 'description', content: 'Portfolio page description' }
     ]
   },
-  async data() {
+  async asyncData() {
     const { data } = await axios.get('sites.json')
     return {
       sites: data
