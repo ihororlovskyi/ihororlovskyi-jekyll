@@ -1,4 +1,4 @@
-# ihororlovskyi
+# ihororlovskyi-jekyll
 
 _Web development of Ihor Orlovskyi site_
 
