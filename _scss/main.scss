@@ -1,0 +1,43 @@
+// Variables
+@import '-variables';
+
+// Vendor
+@import '../node_modules/coriolan-ui/coriolan-ui';
+@import 'vendor/burbon-timing-functions';
+@import 'vendor/svg-icons/svg-icons';
+
+// UX
+@import '-base';
+@import '_components/BgFx/styles';
+@import '_components/Projects/style';
+@import '_components/Footer/styles';
+
+.lesson {
+    margin: 180px auto;
+
+    &__btn-wrap {
+        margin: 180px auto;
+    }
+
+    &__btn {
+
+        background: #fff;
+        color: #666;
+
+        // &:focus {
+        //     background: #fff;
+        //     color: #666;
+        // }
+
+        &:hover {
+            background: #666;
+            color: #fff;
+        }
+
+        &:active {
+            background: green;
+            color: red;
+        }
+
+    }
+}

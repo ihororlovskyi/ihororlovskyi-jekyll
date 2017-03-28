@@ -1,15 +1,24 @@
 {
   "dependencies": {
-    "axios": "^0.15.3",
     "coriolan-ui": "^0.1.19",
+    "jquery": "^3.2.1",
     "normalize.css": "^6.0.0",
-    "nuxt": "^0.10.5"
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "node-sass": "^4.5.1",
-    "sass-loader": "^6.0.3"
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-unicode": "^1.0.1",
+    "gulp-uglify": "^2.1.2",
+    "require-dir": "^0.3.1"
   },
   "scripts": {
-    "start": "nuxt"
+    "build": "gulp font && gulp"
   }
 }

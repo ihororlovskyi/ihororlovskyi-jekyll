@@ -4,18 +4,18 @@ _Web development of Ihor Orlovskyi site_
 
 ### Used
 
-[Nuxt.js](https://nuxtjs.org) - framework for server-rendered [Vue.js](https://vuejs.org) applications
+[Jekyll](https://jekyllrb.com) - static site generator based on [Ruby](https://www.ruby-lang.org)
 
-[Firebase](https://firebase.google.com) - free realtime database by [Google](https://developers.google.com)
+[Gulp](http://gulpjs.com) - build system based on [NodeJS](https://nodejs.org)
 
 [Coriolan UI](https://coriolan-ui.github.io) - [Sass](http://sass-lang.com) mixins pack
 
-[Netlify](https://www.netlify.com) - automatic deploy & free hosting platform
+[Netlify](https://www.netlify.com) - deploy & free hosting platform
 
 ### Run
 
 `npm i`
 
-`npm start`
+`npm run develop`
 
 #### Have fun! :)

@@ -1,0 +1,110 @@
+- {
+  icon : "linkedin",
+  url : "https://www.linkedin.com/in/ihororlovskyi",
+  # hide : true
+}
+- {
+  icon : "github-alt",
+  url : "https://github.com/ihororlovskyi",
+  # hide : true
+}
+- {
+  icon : "mixcloud",
+  url : "https://www.mixcloud.com/irukanji-music",
+  hide : true
+}
+- {
+  icon : "soundcloud",
+  url : "https://soundcloud.com/irukanji-music",
+  # hide : true
+}
+- {
+  icon : "instagram",
+  url : "https://instagram.com/ihororlovskyi",
+  # hide : true
+}
+- {
+  icon : "facebook",
+  url : "http://www.facebook.com/ihororlovskyi",
+  # hide : true
+}
+- {
+  icon : "google-plus",
+  url : "https://plus.google.com/104535536639391603666",
+  hide : true
+}
+- {
+  icon : "twitter",
+  url : "https://twitter.com/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "vk",
+  url : "https://vk.com/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "bandcamp",
+  url : "https://bandcamp.com/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "youtube",
+  url : "https://www.youtube.com/c/igororlovskiy",
+  hide : true
+}
+- {
+  icon : "tumblr",
+  url : "http://ihororlovskyi.tumblr.com",
+  hide : true
+}
+- {
+  icon : "flickr",
+  url : "https://www.flickr.com/photos/98661136@N03",
+  hide : true
+}
+- {
+  icon : "vimeo",
+  url : "https://vimeo.com/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "foursquare",
+  url : "https://foursquare.com/user/53103406",
+  hide : true
+}
+- {
+  icon : "behance",
+  url : "http://www.behance.net/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "dribbble",
+  url : "https://dribbble.com/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "pinterest-p",
+  url : "https://www.pinterest.com/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "etsy",
+  url : "https://www.etsy.com/people/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "deviantart",
+  url : "http://ihororlovskyi.deviantart.com",
+  hide : true
+}
+- {
+  icon : "trello",
+  url : "https://trello.com/ihororlovskyi",
+  hide : true
+}
+- {
+  icon : "gitlab",
+  url : "https://gitlab.com/u/ihororlovskyi",
+  hide : true
+}

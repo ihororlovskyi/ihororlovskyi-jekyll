@@ -1,0 +1,46 @@
+<div class='footer'>
+
+    <div class='footer__title'>Contact:</div>
+
+    <nav class='footer__menu footer__menu--contact'>
+        <div>
+            <span class='icon-envelope-o'></span>
+            <a href='mailto:ihororlovskyi@gmail.com?subject=Hello Ihor'>ihororlovskyi@gmail.com</a>
+        </div>
+        <!-- <div>
+            <span class='icon-skype'></span>
+            sentimony
+        </div> -->
+        <div>
+            <span class='icon-mobile'></span>
+            +38(095)3452589
+        </div>
+    </nav>
+
+    <div class='footer__title'>Let's be in touch:</div>
+
+    <nav class='footer__menu footer__menu--social'>
+        {% for i in site.data.Footer.config %}
+            <a href='{{ i.url }}' class='{% if i.hide == true %}is-hiden{% endif %}' target='_blank'>
+                <span class='icon-{{ i.icon }}'></span>
+                <span class='link-name'>{{ i.icon }}</span>
+            </a>
+        {% endfor %}
+    </nav>
+
+    <!-- <nav class='footer__menu footer__menu--lang'>
+        <a href='{{ site.baseurl }}/'>En</a>
+        <a href='{{ site.baseurl }}/ua/'>Ua</a>
+        <a href='{{ site.baseurl }}/ru/'>Ru</a>
+        <a href='{{ site.baseurl }}/pl/'>Pl</a>
+    </nav> -->
+
+    <div class='footer__rooster'>
+        <a href='http://rooooster.com' class='footer__rooster-link' target='_blank'>
+            <span class='footer__rooster-icon'></span>
+            <span class='footer__rooster-text'>Rooster<br>Studio</span>
+        </a>
+    </div>
+
+</div>
+
