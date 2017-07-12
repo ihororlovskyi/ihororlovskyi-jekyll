@@ -11,7 +11,9 @@ permalink: /lesson/
 
 c 2012 года перешёл на фуллтайм в IT
 
-работы: PromoRepublic => ION Diginal => NextClick => Wargaming => LuckyLabs
+сейчас Front-end TeamLead (LuckyLabs)
+
+<!-- работы: PromoRepublic => ION Diginal => NextClick => Wargaming => LuckyLabs
 
 свои проекты: Sentimony Records, TripMe, Rooster Studio
 
@@ -25,7 +27,7 @@ c 2012 года перешёл на фуллтайм в IT
 
 #### Зона комфрта
 
-не?
+не? -->
 
 ---
 
@@ -49,13 +51,13 @@ PM (Project Manager)
 
 BA (Business Analytics) - ТЗ (техническое задание, дока)
 
-web design
+Web Design
 
-frontend
+Front-end
 
-backend
+Back-end
 
-integration
+Integration
 
 QA
 
@@ -65,7 +67,7 @@ DevOps
 
 Promo Content
 
-Promo Design / контент + лендинги
+Promo Web Design / акции + лендинги
 
 Promo Emails
 
@@ -79,15 +81,17 @@ SMM
 
 ### Обязанности front-end developer
 
-вёрстка
-
-логика
-
-сборка
-
 коммуникация с дизайн
 
+вёрстка
+
 коммуникация с бекенд
+
+написание логики
+
+системы контроля версий
+
+сборка проекта
 
 ### История развития фронта
 
@@ -119,11 +123,15 @@ js фреймворки
 
 создание репозитория username.github.io
 
-h1 с вашим именем
+h1 с вашим именем и h2 с вашей должностью
+
+добавление видео с youtube
 
 подключение гугл фонтс
 
 стили для h1
+
+добавление картинки
 
 [CodePen.com](https://codepen.com) регистрация
 
